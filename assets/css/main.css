@@ -3403,7 +3403,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (orientation: portrait) {
+/*		@media screen and (orientation: portrait) {
 
 			#banner {
 				-moz-flex-direction: column-reverse;
@@ -3452,7 +3452,7 @@ input, select, textarea {
 				max-height: 35vh;
 			}
 
-		}
+		}*/
 
 /* Footer */
 
