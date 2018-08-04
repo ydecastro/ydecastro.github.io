@@ -3403,7 +3403,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-/*		@media screen and (orientation: portrait) {
+		@media screen and (orientation: portrait) {
 
 			#banner {
 				-moz-flex-direction: column-reverse;
@@ -3428,7 +3428,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				#banner .image {
+/*				#banner .image {
 					-moz-flex-grow: 0;
 					-webkit-flex-grow: 0;
 					-ms-flex-grow: 0;
@@ -3442,9 +3442,9 @@ input, select, textarea {
 					max-height: 50vh;
 					min-height: 18em;
 					width: 100%;
-				}
+				}*/
 
-		}*/
+		}
 
 /*		@media screen and (orientation: portrait) and (max-width: 480px) {
 
