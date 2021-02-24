@@ -1,2 +1,2 @@
 # ydecastro.github.io
-Webpage of Yohann De Castro
+Yohann DE CASTRO, Researcher in Statistics and Machine Learning
