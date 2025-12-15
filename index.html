@@ -1,49 +1,166 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-3278327-4']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-		</script>
-					<title>Yohann DE CASTRO</title>
+		<title>Yohann DE CASTRO - Professor at Institut Camille Jordan</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-3278327-4']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+        <style>
+            /* --- Custom Overrides --- */
+            ul.contact li { margin-bottom: 1.5em; }
+            .pub-item { margin-bottom: 0.5em; }
+            .pub-item strong { color: #3d4449; }
+            
+            /* --- Filter Styles --- */
+            .filter-container { text-align: center; margin-bottom: 30px; }
+            .filter-label { font-weight: bold; margin-right: 10px; display: block; margin-bottom: 10px; }
+            @media (min-width: 736px) { .filter-label { display: inline; margin-bottom: 0; } }
+            
+            .btn {
+                background-color: transparent;
+                border: 2px solid #f56a6a;
+                color: #f56a6a !important;
+                padding: 6px 14px;
+                cursor: pointer;
+                border-radius: 4px;
+                font-size: 0.8em;
+                margin: 4px;
+                transition: all 0.3s ease;
+                box-shadow: none !important;
+            }
+            .btn:hover { background-color: rgba(245, 106, 106, 0.1); }
+            .btn.active { background-color: #f56a6a; color: white !important; }
+            
+            .filter-div { display: none; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+            .show { display: block; }
+            
+            .tag {
+                font-size: 0.7em;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 3px 8px;
+                border-radius: 3px;
+                margin-right: 8px;
+                color: white;
+                font-weight: bold;
+                display: inline-block;
+                margin-top: 5px;
+            }
+            .tag-opt { background-color: #28a745; }
+            .tag-geom { background-color: #17a2b8; }
+            .tag-prob { background-color: #ffc107; color: #333; }
+            .tag-alg { background-color: #dc3545; }
+            
+            .pub-item .button.small {
+                float: right;
+                margin-left: 5px;
+                font-size: 0.7em;
+                height: auto;
+                line-height: 2em;
+                padding: 0 10px;
+                box-shadow: inset 0 0 0 1px #ddd;
+                color: #666 !important;
+            }
+            .pub-item .button.small:hover {
+                color: #f56a6a !important;
+                box-shadow: inset 0 0 0 1px #f56a6a;
+            }
+
+            /* --- Dark Mode Styles --- */
+            body.dark-mode {
+                background-color: #1f2226; /* Dark background */
+                color: #c9c9c9;           /* Light text */
+            }
+            body.dark-mode #wrapper {
+                background-color: #1f2226;
+            }
+            body.dark-mode #sidebar {
+                background-color: #181a1d; /* Slightly darker sidebar */
+                border-right: 1px solid #333;
+            }
+            body.dark-mode #sidebar .major h2 {
+                color: #ffffff;
+            }
+            body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+            body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, 
+            body.dark-mode strong, body.dark-mode b, 
+            body.dark-mode .logo strong,
+            body.dark-mode .pub-item strong {
+                color: #ffffff;
+            }
+            body.dark-mode a {
+                color: #f56a6a; /* Keep theme accent color */
+            }
+            body.dark-mode .logo {
+                color: #c9c9c9;
+            }
+            body.dark-mode .box, body.dark-mode .button {
+                border-color: #444;
+                color: #c9c9c9 !important;
+            }
+            body.dark-mode .button.primary {
+                color: #ffffff !important;
+            }
+            body.dark-mode .pub-item .button.small {
+                box-shadow: inset 0 0 0 1px #555;
+                color: #aaa !important;
+            }
+            body.dark-mode .pub-item .button.small:hover {
+                color: #f56a6a !important;
+                box-shadow: inset 0 0 0 1px #f56a6a;
+            }
+            body.dark-mode .filter-div {
+                border-bottom: 1px solid #333;
+            }
+            body.dark-mode table tbody tr {
+                border-color: #333;
+            }
+            body.dark-mode table th {
+                color: #ffffff;
+            }
+            body.dark-mode input, body.dark-mode select, body.dark-mode textarea {
+                background-color: #2a2e33;
+                border-color: #444;
+                color: #ffffff;
+            }
+            /* Dark mode specific hover fix for menu */
+            body.dark-mode #menu ul li a:hover {
+                color: #f56a6a;
+            }
+        </style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
+				<div id="main">
 						<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Welcome</strong> to
-										my professional homepage!</a>
+							<header id="header">
+									<a href="index.html" class="logo"><strong>Welcome</strong> to my professional homepage!</a>
 									<ul class="icons">
-										<li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="icon fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-										<!--<li><a href="https://www.researchgate.net/profile/Yohann_De_Castro2" class="icon fa-google"><span class="label">ResearchGate</span></a></li>-->
+                                        <li>
+                                            <a href="#" class="icon fa-moon-o" id="theme-toggle" onclick="toggleTheme(); return false;" title="Toggle Dark Mode">
+                                                <span class="label">Dark Mode</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="icon fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
 										<li><a href="https://www.linkedin.com/in/yohanndecastro/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 										<li><a href="https://github.com/ydecastro" class="icon fa-github"><span class="label">Github</span></a></li>
 									</ul>
 								</header>
 
-							<!-- Banner -->
 							<section id="banner">
 									<div class="content">
 										<header>
@@ -54,10 +171,8 @@
 											Junior member at <b>Institut universitaire de France</b> (IUF)
 										</p>
 										<ul class="actions">
-											<!--<li><a href="research/cv_decastro.pdf" class="button">Curriculum Vitae</a></li>-->
 											<li><a href="https://github.com/ydecastro" class="button primary">GitHub</a></li>
 											<li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="button primary">G-Scholar</a></li>
-											<!--<li><a href="https://www.researchgate.net/profile/Yohann_De_Castro2" class="button primary">RGate</a></li>-->
 											<li><a href="https://www.linkedin.com/in/yohanndecastro/" class="button primary">LinkedIn</a></li>
 											<li><a href="https://orcid.org/0000-0002-9008-7474" class="button primary">Orcid</a></li>
 										</ul>
@@ -67,536 +182,712 @@
 									</div>
 								</section>
 
-
-								<section>
+                                <section>
 									<header class="major">
-										<h2>Latest news</h2>
+										<h2>Latest News</h2>
 									</header>
-									<article>
-							     <ul>
-									<li>
-										[December 2025] New paper <a href="research/paper45.pdf">Gaussian random field's anisotropy using excursion sets</a> with J.-M. Azaïs and F. Dalmao.<a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">GitHub Repository</a>
-									</li>
-									<li>
-										[December 2025] New version of <a href="research/paper40.pdf">Second Maximum of a Gaussian Random Field and Exact (t-)Spacing test</a> with J.-M. Azaïs and Federico Dalmao, under review.
-									</li>
-									<li>
-										[September 2025] New paper <a href="research/paper43.pdf">Gaussian Mixture Model with unknown diagonal covariances via continuous sparse regularization</a> with R. Giard and C. Marteau, under review.
-									<li>
-										[September 2025] A new version of the <a href="research/paper39.pdf">FastPart: Over-Parameterized Stochastic Gradient Descent
-for Sparse optimisation on Measures</a> paper is available. See the <a href="http://arxiv.org/abs/2312.05993">arXiv preprint</a>.
-									</li>
-									<li>
-										[July 2025] New paper <a href="research/paper44.pdf">Effective regions and kernels in continuous sparse regularisation, with application to sketched mixtures</a> with R. Gribonval and N. Jouvin.
-									</li>
-									</ul>
-									</article>
+									<div class="content">
+                                        <ul class="alt">
+                                            <li>
+                                                <strong>[Dec 2025]</strong> New paper <a href="research/paper45.pdf">Gaussian random field's anisotropy using excursion sets</a> with J.-M. Azaïs and F. Dalmao. <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">GitHub</a>
+                                            </li>
+                                            <li>
+                                                <strong>[Dec 2025]</strong> New version of <a href="research/paper40.pdf">Second Maximum of a Gaussian Random Field and Exact (t-)Spacing test</a> with J.-M. Azaïs and F. Dalmao, under review.
+                                            </li>
+                                            <li>
+                                                <strong>[Sep 2025]</strong> New paper <a href="research/paper43.pdf">Gaussian Mixture Model with unknown diagonal covariances via continuous sparse regularization</a> with R. Giard and C. Marteau, under review.
+                                            </li>
+                                            <li>
+                                                <strong>[Sep 2025]</strong> New version of <a href="research/paper39.pdf">FastPart: Over-Parameterized Stochastic Gradient Descent for Sparse optimisation on Measures</a> available. <a href="http://arxiv.org/abs/2312.05993" class="button small">arXiv</a>
+                                            </li>
+                                            <li>
+                                                <strong>[Jul 2025]</strong> New paper <a href="research/paper44.pdf">Effective regions and kernels in continuous sparse regularisation</a> with R. Gribonval and N. Jouvin.
+                                            </li>
+                                        </ul>
+									</div>
+
 									<header class="major">
 										<h2>Quick Overview</h2>
 									</header>
 									<div class="features">
-										
 										<article>
-											<!-- <span class="icon fa-pencil"></span> -->
+											<span class="icon fa-briefcase"></span>
 											<div class="content">
 												<h3>Activities</h3>
-												<p>
-
-													<ul>
-														<!--<li>Researcher in Statistics; Inverse Problems; Machine Learning; Signal Processing;</li>-->
-														<li> Responsable élu du site École Centrale Lyon de l'Institut Camille Jordan;
-															À ce titre, membre statutaire du conseil de laboratoire de l'Institut Camille Jordan et membre statutaire du comité de direction de l'École Centrale Lyon.</li>
-															<li> Chercheur associé au CERMICS, École Ponts ParisTech;</li>
-															<li> Collaborateur externe de l'équipe <a href="https://team.inria.fr/ockham/team-members/">OCKHAM, INRIA Lyon</a>;</li>
-															<li> Membre élu du conseil du Département Maths-Info de l'École Centrale Lyon;</li>
-													</ul>
-												</p>
+												<ul style="margin-bottom: 0;">
+													<li><strong>Head of Site:</strong> Elected head of the École Centrale Lyon site of the Camille Jordan Institute.</li>
+                                                    <li><strong>Board Member:</strong> Statutory member of the ICJ laboratory council and the ECL management committee.</li>
+													<li><strong>Associate Researcher:</strong> CERMICS, École Ponts ParisTech.</li>
+													<li><strong>External Collaborator:</strong> <a href="https://team.inria.fr/ockham/team-members/">OCKHAM Team</a>, INRIA Lyon.</li>
+													<li><strong>Elected Member:</strong> Council of the Math-CS Department at École Centrale Lyon.</li>
+												</ul>
 											</div>
 										</article>
 										<article>
-											<!-- <span class="icon fa-graduation-cap"></span> -->
+											<span class="icon fa-graduation-cap"></span>
 											<div class="content">
 												<h3>Teaching Duties</h3>
-												<p>
-
-													<ul>
-														<!--<li>Course on Statistics (1A @ECL & 1A @Centrale Casablanca);</li>-->
-														<li>Course on Machine Learning (2A @ECL);</li>
-														<li>Course on Convexity and Parsimony (3A @ECL joint with Master 2 MeA (Lyon 1))</li>
-													</ul>
-												</p>
+												<ul style="margin-bottom: 0;">
+													<li>Course on <strong>Machine Learning</strong> (2A @ECL).</li>
+													<li>Course on <strong>Convexity and Parsimony</strong> (3A @ECL joint with Master 2 MeA, Lyon 1).</li>
+												</ul>
 											</div>
 										</article>
 									</div>
 								</section>
 
+                            <section id="publications-section">
+                                <header class="major">
+                                    <h2 id="publications">Research</h2>
+                                </header>
 
+                                <p>
+                                    My complete list of publications is available on
+                                    <a href="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=yohann%2C+de+castro&typdoc=(%27ART%27,%27COMM%27,%27POSTER%27,%27OUV%27,%27COUV%27,%27DOUV%27,%27PATENT%27,%27HDR%27)&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_typdoc=oui&CB_vignette=oui&langue=Anglais&tri_exp=typdoc&tri_exp2=annee_publi&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuOmbreVignettes.css" class="button primary small" target="_blank">HAL (Open Archives)</a>.
+                                </p>
 
-							<!-- Section -->
-								<section>
-									<header id="publications" class="major">
-										<h2>Research</h2>
+                                <div class="filter-container">
+                                    <span class="filter-label">Filter by Theme:</span>
+                                    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                                    <button class="btn" onclick="filterSelection('opt')">Optimization & Inverse Problems</button>
+                                    <button class="btn" onclick="filterSelection('geom')">Learning, Graphs & Geometry</button>
+                                    <button class="btn" onclick="filterSelection('prob')">Probability & Processes</button>
+                                    <button class="btn" onclick="filterSelection('alg')">Algebra & Design</button>
+                                </div>
+
+                                <ul class="pub-list" style="list-style: none; padding-left: 0;">
+
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Gaussian random field's anisotropy using excursion sets.</strong><br>
+                                            J.-M. Azaïs, Y. De Castro, F. Dalmao.<br>
+                                            <em>Under review</em>, 2025.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Geometry</span>
+                                            <a href="research/paper45.pdf" class="button small">PDF</a>
+                                            <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">Code</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Second Maximum of a Gaussian Random Field and Exact (t-)Spacing test.</strong><br>
+                                            J.-M. Azaïs, Y. De Castro, F. Dalmao.<br>
+                                            <em>Under review</em>, 2025.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Geometry</span>
+                                            <a href="research/paper40.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom opt">
+                                        <div class="pub-item">
+                                            <strong>Gaussian Mixture Model with unknown diagonal covariances via continuous sparse regularization.</strong><br>
+                                            Y. De Castro, R. Giard, C. Marteau.<br>
+                                            <em>Under review</em>, 2025.<br>
+                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper43.pdf" class="button small">PDF</a>
+                                            <a href="https://doi.org/10.5281/zenodo.16942355" class="button small">Zenodo</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div geom opt">
+                                        <div class="pub-item">
+                                            <strong>Effective regions and kernels in continuous sparse regularization.</strong><br>
+                                            Y. De Castro, R. Gribonval, N. Jouvin.<br>
+                                            <em>Under review</em>, 2025.<br>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <span class="tag tag-opt">Optimization</span> 
+                                            <a href="research/paper44.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div opt prob">
+                                        <div class="pub-item">
+                                            <strong>FastPart: Over-Parameterized Stochastic Gradient Descent for Sparse optimisation on Measures.</strong><br>
+                                            Y. De Castro, S. Gadat, C. Marteau.<br>
+                                            <em>ArXiv Preprint</em>, 2023 (Revised 2025).<br>
+                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper39.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2312.05993" class="button small">ArXiv</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div opt">
+                                        <div class="pub-item">
+                                            <strong>Exact recovery of the support of piecewise constant images via total variation regularization.</strong><br>
+                                            Y. De Castro, V. Duval, R. Petit.<br>
+                                            <em>Inverse Problems</em>, 40(10), 2024.<br>
+                                            <span class="tag tag-opt">Inverse Problems</span>
+                                            <a href="research/paper38.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>SIGLE: valid Selective Inference procedure for Generalized Linear Lasso.</strong><br>
+                                            Y. De Castro, Q. Duchemin.<br>
+                                            <em>Under review</em>.<br>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <a href="research/paper36.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Neural Networks beyond explainability: Selective inference for sequence motifs.</strong><br>
+                                            Y. De Castro, A. Villié, P. Veber, L. Jacob.<br>
+                                            <em>Transactions on Machine Learning Research (TMLR)</em>, 2023.<br>
+                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper37.pdf" class="button small">PDF</a>
+                                            <a href="https://openreview.net/forum?id=nddEHTSnqg" class="button small">OpenReview</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Markov Random Geometric Graph (MRGG): A Growth Model for Temporal Dynamic Networks.</strong><br>
+                                            Y. De Castro, Q. Duchemin.<br>
+                                            <em>Electronic Journal of Statistics</em>, 16, 671-699, 2022.<br>
+                                            <span class="tag tag-geom">Graphs</span>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <a href="research/paper28.pdf" class="button small">PDF</a>
+                                            <a href="https://github.com/quentin-duchemin/Markovian-random-geometric-graph#readme" class="button small">Code</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div opt">
+                                        <div class="pub-item">
+                                            <strong>Towards off-the-grid algorithms for total variation regularized inverse problems.</strong><br>
+                                            Y. De Castro, R. Petit, V. Duval.<br>
+                                            <em>Journal of Mathematical Imaging and Vision (JMIV)</em>, 2022.<br>
+                                            <span class="tag tag-opt">Inverse Problems</span>
+                                            <a href="research/paper32.pdf" class="button small">PDF</a>
+                                            <a href="https://github.com/rpetit/tvsfw" class="button small">Code</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Multiple Testing and Variable Selection along Least Angle Regression's path.</strong><br>
+                                            Y. De Castro, J-M Azaïs.<br>
+                                            <em>Information & Inference</em>, 2022.<br>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <a href="https://ydecastro.github.io/lar_testing/" class="button small">Code</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Three rates of convergence or separation via U-statistics in a dependent framework.</strong><br>
+                                            Y. De Castro, Q. Duchemin, C. Lacour.<br>
+                                            <em>Journal of Machine Learning Research</em>, 23(201), 1-59, 2022.<br>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="https://www.jmlr.org/papers/volume23/21-0819/21-0819.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Concentration inequality for U-statistics of order two for uniformly ergodic Markov chains.</strong><br>
+                                            Y. De Castro, Q. Duchemin, C. Lacour.<br>
+                                            <em>Bernoulli Journal</em>, 2022.<br>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper30.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom opt">
+                                        <div class="pub-item">
+                                            <strong>SuperMix: Sparse Regularization for Mixtures.</strong><br>
+                                            Y. De Castro, S. Gadat, C. Marteau, C. Maugis-Rabusseau.<br>
+                                            <em>Annals of Statistics</em>, 49(3), 1779-1809, 2021.<br>
+                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper26.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div alg opt">
+                                        <div class="pub-item">
+                                            <strong>Dual optimal design and the Christoffel-Darboux polynomial.</strong><br>
+                                            Y. De Castro, F. Gamboa, D. Henrion, J.-B. Lasserre.<br>
+                                            <em>Optimization Letters</em>, 15, 3-8, 2021.<br>
+                                            <span class="tag tag-alg">Algebra</span> 
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper29.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Forecasting Nonnegative Time Series via Sliding Mask Method (SMM).</strong><br>
+                                            Y. De Castro, L. Mencarelli.<br>
+                                            <em>ArXiv Preprint</em>, 2021.<br>
+                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper31.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Testing Gaussian Process with Applications to Super-Resolution.</strong><br>
+                                            Y. De Castro, J.-M. Azaïs, S. Mourareau.<br>
+                                            <em>ACHA</em>, 48, 445-481, 2020.<br>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper21.pdf" class="button small">PDF</a>
+                                            <a href="https://ydecastro.github.io/super-resolution-testing/" class="button small">Code</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Latent distance estimation for random geometric graphs.</strong><br>
+                                            Y. De Castro, E. Araya.<br>
+                                            <em>NeurIPS</em>, 2019.<br>
+                                            <span class="tag tag-geom">Geometry</span> 
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper27.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div opt geom">
+                                        <div class="pub-item">
+                                            <strong>On Representer Theorems and Convex Regularization.</strong><br>
+                                            Y. De Castro, C. Boyer, A. Chambolle, V. Duval, F. de Gournay, P. Weiss.<br>
+                                            <em>SIAM Journal on Optimization</em>, 29(2), 2019.<br>
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper23.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div alg opt">
+                                        <div class="pub-item">
+                                            <strong>Approximate Optimal Designs for Multivariate Polynomial Regression.</strong><br>
+                                            Y. De Castro, F. Gamboa, D. Henrion, R. Hess, J.-B. Lasserre.<br>
+                                            <em>Annals of Statistics</em>, 47(1), 127–155, 2019.<br>
+                                            <span class="tag tag-alg">Algebra</span> 
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper20.pdf" class="button small">PDF</a>
+                                            <a href="https://ydecastro.github.io/optimal-design-sum-of-squares/" class="button small">Code</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Nonnegative Matrix Factorization with Side Information for Time Series Recovery.</strong><br>
+                                            Y. De Castro, J-M Azaïs, Y. Goude, G. Hébrail, J. Mei.<br>
+                                            <em>IEEE Trans. Knowledge and Data Engineering</em>, 31(3), 2019.<br>
+                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper18.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Sparse Recovery from Extreme Eigenvalues Deviation Inequalities.</strong><br>
+                                            Y. De Castro, S. Dallaporta.<br>
+                                            <em>ESAIM P&S</em>, 23, 430-463, 2019.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper16.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Adaptive Estimation of Nonparametric Geometric Graphs.</strong><br>
+                                            Y. De Castro, C. Lacour, T. M. Pham Ngoc.<br>
+                                            <em>Mathematical Statistics and Learning</em>, 2(3/4), 2019.<br>
+                                            <span class="tag tag-geom">Graphs</span> 
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper22.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Power of the Spacing test for Least-Angle Regression.</strong><br>
+                                            Y. De Castro, J.-M. Azaïs, S. Mourareau.<br>
+                                            <em>Bernoulli Journal</em>, 24(1), 2018.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper12.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div alg opt">
+                                        <div class="pub-item">
+                                            <strong>Exact solutions to Super Resolution on semi-algebraic domains in higher dimensions.</strong><br>
+                                            Y. De Castro, F. Gamboa, D. Henrion, J.-B. Lasserre.<br>
+                                            <em>IEEE Trans. Info. Theory</em>, 63(1), 2017.<br>
+                                            <span class="tag tag-alg">Algebra</span> 
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper13.pdf" class="button small">PDF</a>
+                                            <a href="https://ydecastro.github.io/total-variation-sum-of-squares/" class="button small">Code</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div opt geom">
+                                        <div class="pub-item">
+                                            <strong>Adapting to Unknown Noise Level in Sparse Deconvolution.</strong><br>
+                                            Y. De Castro, C. Boyer, J. Salmon.<br>
+                                            <em>Information & Inference</em>, 6(3), 2017.<br>
+                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper14.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div geom alg">
+                                        <div class="pub-item">
+                                            <strong>Reconstructing undirected graphs from eigenspaces.</strong><br>
+                                            Y. De Castro, T. Espinasse, P. Rochet.<br>
+                                            <em>JMLR</em>, 18(51), 2017.<br>
+                                            <span class="tag tag-geom">Graphs</span> 
+                                            <span class="tag tag-alg">Algebra</span>
+                                            <a href="research/paper15.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>A Rice method proof of the Null-Space Property over the Grassmannian.</strong><br>
+                                            Y. De Castro, J.-M. Azaïs, S. Mourareau.<br>
+                                            <em>Annales de l'Institut Henri Poincaré</em>, 53(4), 2017.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Geometry</span>
+                                            <a href="research/paper7.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Minimax adaptive estimation of non-parametric Hidden Markov Models.</strong><br>
+                                            Y. De Castro, É. Gassiat, C. Lacour.<br>
+                                            <em>JMLR</em>, 17(111), 2016.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper11.pdf" class="button small">PDF</a>
+                                            <a href="https://github.com/ydecastro/nonparametric-hmm" class="button small">Code</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div opt geom">
+                                        <div class="pub-item">
+                                            <strong>Spike Detection from Inaccurate Samplings.</strong><br>
+                                            Y. De Castro, J.-M. Azaïs, F. Gamboa.<br>
+                                            <em>ACHA</em>, 38(2), 2015.<br>
+                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper5.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div prob geom">
+                                        <div class="pub-item">
+                                            <strong>Randomized pick-freeze for sparse Sobol indices estimation in high dimension.</strong><br>
+                                            Y. De Castro, A. Janon.<br>
+                                            <em>ESAIM P&S</em>, 19, 2015.<br>
+                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper10.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="filter-div alg opt">
+                                        <div class="pub-item">
+                                            <strong>Optimal designs for Lasso and Dantzig selector using Expander Codes.</strong><br>
+                                            Y. De Castro.<br>
+                                            <em>IEEE Trans. Info. Theory</em>, 60(11), 2014.<br>
+                                            <span class="tag tag-alg">Algebra</span> 
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper2.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="filter-div geom opt">
+                                        <div class="pub-item">
+                                            <strong>Exact Reconstruction using Beurling Minimal Extrapolation.</strong><br>
+                                            Y. De Castro, F. Gamboa.<br>
+                                            <em>JMAA</em>, 395(1), 2012.<br>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <span class="tag tag-opt">Optimization</span> 
+                                            <a href="research/paper4.pdf" class="button small">PDF</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <script>
+                                    filterSelection("all")
+                                    function filterSelection(c) {
+                                        var x, i;
+                                        x = document.getElementsByClassName("filter-div");
+                                        if (c == "all") c = "";
+                                        for (i = 0; i < x.length; i++) {
+                                            w3RemoveClass(x[i], "show");
+                                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                        }
+                                    }
+
+                                    function w3AddClass(element, name) {
+                                        var i, arr1, arr2;
+                                        arr1 = element.className.split(" ");
+                                        arr2 = name.split(" ");
+                                        for (i = 0; i < arr2.length; i++) {
+                                            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                                        }
+                                    }
+
+                                    function w3RemoveClass(element, name) {
+                                        var i, arr1, arr2;
+                                        arr1 = element.className.split(" ");
+                                        arr2 = name.split(" ");
+                                        for (i = 0; i < arr2.length; i++) {
+                                            while (arr1.indexOf(arr2[i]) > -1) {
+                                                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                                            }
+                                        }
+                                        element.className = arr1.join(" ");
+                                    }
+
+                                    // Active button switcher
+                                    var btnContainer = document.querySelector(".filter-container");
+                                    var btns = btnContainer.getElementsByClassName("btn");
+                                    for (var i = 0; i < btns.length; i++) {
+                                        btns[i].addEventListener("click", function(){
+                                            var current = document.getElementsByClassName("active");
+                                            if(current.length > 0) { 
+                                                current[0].className = current[0].className.replace(" active", "");
+                                            }
+                                            this.className += " active";
+                                        });
+                                    }
+                                </script>
+                            </section>
+
+							<section id="supervision">
+									<header id="phd" class="major">
+										<h2>Supervision</h2>
 									</header>
-									<p>My (almost complete list of) publications can be found on this <a href="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=yohann%2C+de+castro&typdoc=(%27ART%27,%27COMM%27,%27POSTER%27,%27OUV%27,%27COUV%27,%27DOUV%27,%27PATENT%27,%27HDR%27)&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_typdoc=oui&CB_vignette=oui&langue=Anglais&tri_exp=typdoc&tri_exp2=annee_publi&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuOmbreVignettes.css"   class="button primary small" target="_blank">list of publications (type and year)</a>
-										<!---
-									 <a href=" http://arxiv.org/a/decastro_y_1"   class="button primary small">ArXiv</a>
-									 --->
-									</p>
-
-									<p>I provide below a list of publications by subjects (Sparse models &amp; Mathematical Statistics)</a>
-										<!---
-									 <a href=" http://arxiv.org/a/decastro_y_1"   class="button primary small">ArXiv</a>
-									 --->
-									</p>
-									<!---
-									<h2>Papers &amp; Proceedings</h2>
-									--->
-										<h3>Sparse models: High-Dimension (L1); Measures (TV); Variational (TV gradient)</h3>
-										<ul>
-											<li>
-												<a href="research/paper44.pdf">Effective regions and kernels in continuous sparse regularization</a> with R. Gribonval and N. Jouvin, under review.
-											</li>
-											<li>
-												<a href="research/paper43.pdf">Gaussian Mixture Model with unknown diagonal covariances via continuous sparse regularization</a> with R. Giard and C. Marteau, under review. <a href="https://doi.org/10.5281/zenodo.16942355"  class="button small">Zenodo</a>
-											</li>
-											<li>
-												<a href="research/paper39.pdf">FastPart: Over-Parameterized Stochastic Gradient Descent
-												for Sparse optimisation on Measures</a> with S. Gadat and C. Marteau, under review.
-											</li>
-											<li>
-												<a href="research/paper38.pdf">Exact recovery of the support of piecewise constant images via
-													total variation regularization</a> with V. Duval and R. Petit, <b>Inverse Problems</b>, Volume 40, Number 10, 2024.
-											</li>
-											<li><a href="research/paper36.pdf">SIGLE: valid Selective Inference procedure for Generalized Linear Lasso</a>,
-												with Q. Duchemin, under review.
-											</li>
-											<li><a href="research/paper32.pdf">Towards off-the-grid algorithms for total variation regularized inverse problems</a>,
-												with R. Petit &amp; V. Duval, Proceedings of the eighth international conference on Scale Space and Variational Methods in computer vision (SSVM), Pages 553--564, 2021;
-												and published in Journal of Mathematical Imaging and Vision, 2022 (extended version).
-												<a href="https://github.com/rpetit/tvsfw"  class="button small">GitHub Repository</a>
-											</li>
-											<li><a href="research/paper29.pdf">Dual optimal design and the Christoffel-Darboux polynomial</a> with F. Gamboa &amp; D. Henrion &amp; J.-B. Lasserre,
-												Optimization Letters, 2021, Vol. 15, 3-8.
-											</li>
-											<li><a href="research/paper26.pdf">SuperMix: Sparse Regularization for Mixtures</a>,
-												with S. Gadat &amp; C. Marteau &amp; C. Maugis-Rabusseau, <b>Annals of Statistics</b>, 2021, Vol. 49, No. 3, 1779-1809.
-											</li>
-											<li><a href="https://academic.oup.com/imaiai/advance-article/doi/10.1093/imaiai/iaac018/6711418?guestAccessKey=0f8404f7-632a-423d-aafc-fc0c408352fc">Multiple Testing and Variable Selection along Least Angle Regression's path</a>,
-														with J-M Azaïs, <b>Information &amp Inference: A Journal of the IMA</b>, 2022.
-														<a href="https://ydecastro.github.io/lar_testing/"  class="button small">GitHub Repository</a>
-											</li>
-												<li><a href="research/paper24.pdf">A Short Introduction to “Moment-SoS Hierarchies”</a>,
-													<b>Deuxième Congrès National de la SMF</b>, 2018.</li>
-												<li><a href="research/paper23.pdf">On Representer Theorems and Convex Regularization</a>, with C. Boyer &amp; A. Chambolle &amp; V. Duval &amp; F. de Gournay &amp; P. Weiss,
-														<b>SIAM Journal on Optimization</b>, 29(2), 1260–1281. A related conference paper published at <b>iTWIST'18</b> is
-														<a href="research/paper23b.pdf">Convex Regularization and Representer Theorems</a>, with C. Boyer &amp; A. Chambolle &amp; V. Duval &amp; F. de Gournay &amp; P. Weiss.</li>
-												<li><a href="research/paper21.pdf">Testing Gaussian Process with Applications to Super-Resolution</a>, with J.-M. Azaïs &amp; S. Mourareau,
-														<b>Applied and Computational Harmonic Analysis</b>, Volume 48, Pages 445-481, 2020.
-														<a href="https://ydecastro.github.io/super-resolution-testing/" class="button small">GitHub Repository</a></li>
-												<li><a href="research/paper20.pdf">Approximate Optimal Designs for Multivariate Polynomial Regression</a> with F. Gamboa &amp; D. Henrion &amp; R. Hess &amp; J.-B. Lasserre,
-														<b>Annals of Statistics</b>, Volume 47, Issue 1, Pages 127–155, 2019.
-														<a href="https://ydecastro.github.io/optimal-design-sum-of-squares/"  class="button small">Matlab Code</a>
-														<br> Extended version of <a href="research/paper19.pdf">D-Optimal Design for Multivariate Polynomial Regression via the Christoffel function and Semidefinite Relaxations</a>, with F. Gamboa &amp; D. Henrion &amp; R. Hess &amp; J.-B. Lasserre,
-														arXiv 1703.01777.</li>
-												<li><a href="research/paper16.pdf">Sparse Recovery from Extreme Eigenvalues Deviation Inequalities</a>, with S. Dallaporta,
-														<b>ESAIM P&amp;S</b>, Volume 23, Pages 430-463, 2019.</li>
-												<li><a href="research/paper14.pdf">Adapting to Unknown Noise Level in Sparse Deconvolution</a>, with C. Boyer &amp; J. Salmon,
-														<b>Information &amp Inference: A Journal of the IMA</b>, Volume 6, Issue 3, 1 September 2017, Pages 310–348.</li>
-												<li><a href="research/paper13.pdf">Exact solutions to Super Resolution on semi-algebraic domains in higher dimensions</a>, with F. Gamboa &amp; D. Henrion &amp; J.-B. Lasserre,
-														<b>IEEE Transactions on Information Theory</b>, Volume 63, Issue 1, Jan. 2017, Pages 621-630.
-														<a href="https://ydecastro.github.io/total-variation-sum-of-squares/" class="button small">Matlab Code</a></li>
-												<li><a href="research/paper12.pdf">Power of the Spacing test for Least-Angle Regression</a>, with J.-M. Azaïs &amp; S. Mourareau,
-														<b>Bernoulli Journal</b>, Volume 24 n°1 (2018), Pages 465-492.</li>
-												<li><a href="research/paper10.pdf">Randomized pick-freeze for sparse Sobol indices estimation in high dimension</a>, with A. Janon,
-														<b>ESAIM P&amp;S</b>, Volume 19, 2015, Pages 725-745.</li>
-												<li><a href="research/paper9.pdf">Non-uniform spline recovery from small degree polynomial approximation</a>, with G. Mijoule,
-														<b>Journal of Mathematical Analysis and Applications</b>, Volume 430, Issue 2, 15 October 2015, Pages 971–992.</li>
-												<li><a href="research/paper7.pdf">A Rice method proof of the Null-Space Property over the Grassmannian</a>, with J.-M. Azaïs &amp; S. Mourareau,
-														<b>Annales de l’Institut Henri Poincaré</b>, Probabilités et Statistiques, Volume 53, Number 4 (2017), Pages 1821-1838.</li>
-												<li><a href="research/paper5.pdf">Spike Detection from Inaccurate Samplings</a>, with J.-M. Azaïs &amp; F. Gamboa,
-														<b>Applied and Computational Harmonic Analysis</b>, Volume 38, Issue 2, March 2015, Pages 177–195.</li>
-												<li><a href="research/paper4.pdf">Exact Reconstruction using Beurling Minimal Extrapolation</a>, with F. Gamboa,
-														<b>Journal of Mathematical Analysis and Applications</b>, Volume 395, Issue 1, Nov. 2012, Pages 336-354.</li>
-												<li><a href="research/paper3.pdf">A remark on the lasso and the Dantzig selector</a>,
-														<b>Statistics &amp; Probability Letters</b>, Volume 83, Issue 1, January 2013, Pages 304-314.</li>
-												<li><a href="research/paper2.pdf">Optimal designs for Lasso and Dantzig selector using Expander Codes</a>,
-														<b>IEEE Transactions on Information Theory</b>, Volume 60, Issue 11, Nov. 2014, Pages 7293-7299.</li>
-										</ul>
-
-										<h3>Mathematical Statistics, Learning, and Applications</h3>
-										
-										<ul>
-											<li>
-												<a href="research/paper45.pdf">Gaussian random field's anisotropy using excursion sets</a> with J.-M. Azaïs and F. Dalmao, under review. <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">GitHub Repository</a>
-											</li>
-											<li>
-												<a href="research/paper42.pdf">Node Regression on Latent Position Random Graphs via Local Averaging</a> with M. Gjorgjevski, N. Keriven and S. Barthelmé.
-											</li>
-											<li>
-												<a href="research/paper41.pdf">Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems</a> with P.-C. Aubin-Frankowski, A. Parmentier, and Alessandro Rudi.
-											</li>
-											<li>
-												<a href="research/paper40.pdf">Second Maximum of a Gaussian Random Field and Exact (t-)Spacing test</a> with J.-M. Azaïs and Federico Dalmao, under review.
-											</li>
-											<li>
-												<a href="research/paper37.pdf">Neural Networks beyond explainability: Selective inference for sequence motifs</a>, with A. Villié, P. Veber, and L. Jacob, <b>Transactions on Machine Learning Research (TMLR)</b>, 06/2023. <a href="https://openreview.net/forum?id=nddEHTSnqg" class="button small">OpenReview</a>
-											</li>
-											<li><a href="research/paper34.pdf">Minimax Estimation of Partially-Observed Vector AutoRegressions</a>,
-												with G. Dalle, <b> Electronic Journal of Statistics</b>, to appear.</li>
-											<li><a href="research/paper31.pdf">Forecasting Nonnegative Time Series via Sliding Mask Method (SMM) and Latent Clustered Forecast (LCF)</a>, with L. Mencarelli,
-												arXiv:2102.05314, 2021.</li>
-												<li><a href="research/paper33.pdf">Random Geometric Graph: Some recent developments and perspectives</a>,
-													with Q. Duchemin, accepted for publication at the proceedings of the <b>High Dimensional Probability IX Conference</b>, Progress in Probability series.</li>
-												<li><a href="https://www.jmlr.org/papers/volume23/21-0819/21-0819.pdf">Three rates of convergence or separation via U-statistics in a dependent framework</a>,
-													with Q. Duchemin and C. Lacour, <b>Journal of Machine Learning Research</b>, Volume 23, Issue 201, Pages 1-59, 2022.</li>
-											<li><a href="research/paper30.pdf">Concentration inequality for U-statistics of order two for uniformly ergodic Markov chains</a>, with Q. Duchemin and C. Lacour, <b>Bernoulli Journal</b>, 2022 (to appear).</li>
-											<li><a href="research/paper28.pdf">Markov Random Geometric Graph (MRGG): A Growth Model for Temporal Dynamic Networks</a>,
-												with Q. Duchemin, <b>Electronic Journal of Statistics</b>, Volume 16, Pages 671-699, 2022.</li> <a href="https://github.com/quentin-duchemin/Markovian-random-geometric-graph#readme" class="button small">GitHub Repository</a>
-											<li><a href="research/paper27.pdf">Latent distance estimation for random geometric graphs</a>, with E. Araya,
-														<b>NeurIPS 2019</b>.</li>
-											<li><a href="research/paper22.pdf">Adaptive Estimation of Nonparametric Geometric Graphs</a>, with C. Lacour &amp; T. M. Pham Ngoc,
-																<b>Mathematical Statistics and Learning</b>, Vol. 2, No. 3/4, pp. 217–274, 2019. <url>https://doi.org/10.4171/msl/15</url></li>
-											<li><a href="research/paper18.pdf">Nonnegative Matrix Factorization with Side Information for Time Series Recovery and Prediction</a>, with J-M Azaïs &amp; Y. Goude &amp; G. Hébrail &amp; J. Mei,
-												<b>IEEE Transactions on Knowledge and Data Engineering</b>, Volume 31, Issue 3, March 1, Pages 493-506, 2019.</li>
-												<li><a href="research/paper17.pdf">Nonnegative Matrix Factorization for Time Series Recovery From a Few Temporal Aggregates</a>, with J-M Azaïs &amp; Y. Goude &amp; G. Hébrail &amp; J. Mei,
-														<b>Proceedings of the 34th International Conference on Machine Learning (ICML 2017)</b>, PMLR 70:2382-2390, 2017.</li>
-											<li><a href="research/paper15.pdf">Reconstructing undirected graphs from eigenspaces</a>, with T. Espinasse &amp; P. Rochet,
-											<b>Journal of Machine Learning Research</b>, Volume 18, Issue 51, Pages 1−24, 2017.</li>
-											<li><a href="research/paper8.pdf">Consistent estimation of the filtering and marginal smoothing distributions in nonparametric hidden Markov models</a>, with &Eacute;. Gassiat &amp; S. Le Corff,
-											<b>IEEE Transactions on Information Theory</b>, Volume 63, Issue 8, Aug. 2017, Pages 4758-4777. </li>
-											<li><a href="research/paper11.pdf">Minimax adaptive estimation of non-parametric Hidden Markov Models</a>, with &Eacute;. Gassiat &amp; C. Lacour,
-											<b>Journal of Machine Learning Research</b>, Volume 17, Issue 111, Pages 1-43, 2016.
-											<a href="https://github.com/ydecastro/nonparametric-hmm" class="button small">Matlab Codes</a></li>
-												<li><a href="research/paper6.pdf">Estimating the transition matrix of a Markov chain observed at random times</a>, with F. Barsotti &amp; T. Espinasse &amp; P. Rochet,
-												<b>Statistics &amp; Probability Letters</b>, Volume 94, November 2014, Pages 98-105.</li>
-												<li><a href="research/paper1.pdf">Quantitative Isoperimetric Inequalities on the Real Line</a>,
-												<b>Annales Mathématiques Blaise Pascal</b>, Volume 18 n°2 (2011), Pages 311-331.</li>
-										</ul>
-
-<!--
-									<h2>Co-Workers</h2>
-									<p>
-										<a href="http://www.math.univ-toulouse.fr/%7Eazais/">Jean-Marc Aza&iuml;s</a>;
-										Flavia Barsotti;
-										<a href="http://www.math.univ-toulouse.fr/~cboyer/">Claire Boyer</a>;
-										<a href="http://www.cmap.polytechnique.fr/~antonin/">Antonin Chambolle</a>;
-										<a href="http://dallaporta.perso.math.cnrs.fr/">Sandrine Dallaporta</a>;
-										<a href="https://who.rocq.inria.fr/Vincent.Duval/">Vincent Duval</a>;
-										<a href="http://math.univ-lyon1.fr/homes-www/espinasse">Thibault Espinasse</a>;
-										<a href="https://perso.math.univ-toulouse.fr/gadat/">Sébastien Gadat</a>;
-										<a href="http://www.math.univ-toulouse.fr/%7Egamboa/">Fabrice Gamboa</a>;
-										<a href="http://www.math.u-psud.fr/~gassiat/">&Eacutelisabeth Gassiat</a>;
-										<a href="https://frederic.degournay.fr/">Frédéric de Gournay</a>;
-										Yannig Goude;
-										Georges Hébrail;
-										<a href="http://homepages.laas.fr/henrion/">Didier Henrion</a>;
-										Roxana Hess;
-										<a href="http://www.math.u-psud.fr/~janon/">Alexandre Janon</a>;
-										<a href="http://www.math.u-psud.fr/~lacour/">Claire Lacour</a>;
-										<a href="http://homepages.laas.fr/lasserre/">Jean-Bernard Lasserre</a>;
-										<a href="http://www.math.u-psud.fr/~lecorff/">Sylvain Le Corff</a>;
-										<a href="http://math.univ-lyon1.fr/~marteau/">Clément Marteau</a>;
-										<a href="https://perso.math.univ-toulouse.fr/maugis/">Cathy Maugis-Rabusseau</a>;
-										Jiali Mei;
-										<a href="https://sites.google.com/site/guillaumemijoule/home">Guillaume Mijoule</a>;
-										Stéphane Mourareau;
-										<a href="https://www.math.u-psud.fr/~phamngoc/">Thanh Mai Pham Ngoc</a>;
-										<a href="http://www.math.sciences.univ-nantes.fr/~rochet/" title="Paul Rochet">Paul Rochet</a>;
-										<a href="http://josephsalmon.eu/">Joseph Salmon</a>;
-										<a href="https://www.math.univ-toulouse.fr/~weiss/">Pierre A. Weiss</a>;
-									</p>
-
-									<h2>Talks &amp; Lectures</h2>
-									<p>Recent talks are available at <a href="https://speakerdeck.com/ydecastro"   class="button primary small">Speaker Deck</a>
-									</p>
-									-->
-									<!--	<p>
-										<h3>Recently</h3>
-											<ul>
-												<li>S&eacute;minaire d'Informatique de l'&Eacute;cole Normale Sup&eacute;rieure, Lyon.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s de l'&Eacute;cole Normale Sup&eacute;rieure, Lyon.</li>
-												<li>Groupe de Travail "Gaussian Process" Universit&eacute; Jean Monnet, St-&Eacute;tienne.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s de Lille.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s et Statistique de Liège.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s et Statistique de Versailles, LMV.</li>
-												<li>S&eacute;minaire de Statistique de Toulouse, IMT.</li>
-												<li>Groupe de Travail "Sequential Structured Statistical Learning", IHES.</li>
-												<li>Cambridge Statistics Seminar, Cambridge, UK.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s de l'&Eacute;cole Nationale Sup&eacute;rieure de Techniques Avanc&eacute;es, Palaiseau.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s et Statistique de Nanterre, Modal'X.</li>
-												<li>S&eacute;minaire de Probabilit&eacute;s de Rennes, IRMAR.</li>
-												<li>2015 Saint Flour summer school.</li>
-												<li><a href="http://math.univ-lyon1.fr/~fougeres/rsl.html">Rencontres Statistique Lyonnaises</a>.</li>
-												<li>Séminaire du CREST, ENSAE.</li>
-
-											</ul>
-										<h3>Ante</h3>
-											<ul><li>Course in <a href="workshops/2014montevideo/Spring-Summer-School-Montevideo.html">Summer school on Random processes, Rice Formulas in relation with  compressed sensing and sensibilty analysis</a>, Centro de Matem&aacute;ticas, Montevideo, Uruguay.</li>
-												<li><a href="talks/seminaire_IHP.pdf">Slides "Direct proof of NSP"</a> for the <a href="https://sites.google.com/site/semstats/">Séminaire Parisien de Statistique</a>, Institut Henri Poicaré, France.
-												</li>
-												<li>
-												<a href="talks/2014_05_Cargese.pdf">Slides</a> for <a href="http://hdpvii.gatech.edu/">High Dimensional Probability VII</a>, Institut d'Études Scientifiques de Cargèse, Cargèse, France.
-												</li>
-												<li>
-												<a href="talks/X_2014_02.pdf">Slides</a> for <a href="http://www.cmap.polytechnique.fr/spip.php?page=semproba">Séminaire Aléa du CMAP</a>, Polytechnique, Palaiseau, France.
-												</li>
-												<li>
-												<a href="talks/CMLA_2014_02.pdf">Slides</a> for <a href="http://www.cmla.ens-cachan.fr/version-francaise/manifestations/seminaire-du-cmla-un-resultat-de-localisation-de-diracs-a-partir-de-peu-de-basses-frequences-bruitees-237820.kjsp?RH=DL_CMLA-FR">Séminaire du CMLA</a>, ENS Cachan, Cachan, France.
-												</li>
-											    <li>
-											    <a href="http://www.cmat.edu.uy/cmat/eventos/ww/programa">Wschebor Workshop</a> and <a href="http://www.cmat.edu.uy/cmat/eventos/9erpem">9no Encuentro Regional de Probabilidad y Estadística Matemática</a>, Maldonado, Uruguay.
-											    </li>
-											    <li><a href="talks/ICCOPT_DECASTRO_31_07_2013.pdf">Slides "Spike localization from inaccurate samplings"</a> for the <a href="http://eventos.fct.unl.pt/iccopt2013">International Conference on Continuous Optimization</a>, Lisbon, Portugal.
-											    </li>
-											    <li>Workshop on <a href="http://www.gdr-mascotnum.fr/mai13.html">Dimension Reduction of the GDR Mascot-Num</a>, Institut Henri Poincaré, Paris, France.</li>
-											    <li>Mini-course in <a href="workshops/2013cuba/Spring-Summer-School-HABANA.html">Spring-Summer School on Inverse Problems, Spectral Analysis and Time series</a>, Universidad de la Habana, Cuba.</li>
-											    <li>Workshop on Signal Processing, Universit&eacute; Paris Dauphine, France.</li>
-											<li><a href="talks/CIRM_DECASTRO_12_2012.pdf">Slides "Expander Designs"</a> for <a href="http://www.cirm.univ-mrs.fr/Site_test/spip.php?rubrique2&EX=info_rencontre&annee=2012&id_renc=809">Nonparametric and high-dimensional Statistics</a>, CIRM (Luminy), France.</li>
-											<li>
-											<a href="https://sites.google.com/site/smileinparis/past-seminars-2012---13">SMILE seminar</a>, Paris, France.
-											</li>
-											<li>
-											<a href="http://jds2012.ulb.ac.be/">Journées de Statistiques</a>, Bruxelles, Belgique.
-											</li>
-											<li>Monthly seminar of statistics of Lyon, Lyon, France.
-											</li>
-											<li>Seminar of the Mathematics department of the University Paris-Sud, Orsay, France.</li>
-											<li>Seminar of the Laboratory Jean Kuntzmann, Grenoble, France.</li>
-
-											<li>Seminar of ENSAE, Malakov, France.</li>
-											<li>
-											<a href="talks/StFlour_DECASTRO_07_2011.pdf">Slides "Super-resolution"</a> for <a href="http://math.univ-bpclermont.fr/stflour/">&Eacute;cole d'été de St-Flour</a>, St-Flour, France.
-											</li>
-											<li>
-											Lecture on Compressed Sensing during the summer school "Sparsity and Model selection" of the IFUM, Montevideo, Uruguay.
-
-											</li>
-										</ul>
-									</p>-->
-								</section>
-
-								<!-- Section -->
-									<section>
-										<header id="phd" class="major">
-											<h2>Ph.D. Students</h2>
-										</header>
+                                    <h3>Ph.D. Students</h3>
 										<div class="row">
-												<!--<div class="col-6 col-12-small">-->
-												<!--	<h3>Position</h3>-->
-												<!--	<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>-->
-												<!--</div>-->
-												<!--<div class="col-6 col-12-small">-->
-													<!--<h3>Ph.D. Students</h3>-->
-													<ul>
-														<li>
-															<b>Bruna ARAUJO</b> (ShapeMed, Starting October 2025) with Kaniav Kamary and Vivian Viallon; Variational methods for causal inference in epidemiology;
-														</li>
-														<li>
-															<b>Romane GIARD</b> (ECL, Starting October 2024) with Clément Marteau; Towards optimal statistical bounds and algorithms for Unsupervised Learning;
-														</li>
-															<!--<li><b>Clément REMILLIEUX</b> (start 2025); Continuous Sparse Neural Networks;</li>-->
-															<!-- <li><b>Antoine SIMOES</b> (CDSN ENS Lyon, Starting September 2022) with Joseph Salmon; High-Dimensional Statistics and MCP methods;</li>-->
-															<li><b>Martin GJORGJEVSKI</b> (ANR GrandMa, Starting September 2022) with Nicolas Keriven and Simon Barthelmé; Signal on Graphs;</li>
-															<!--<li><b>Ahmed EL RAFY</b> (CIFRE, Starting September 2022) with Marc Jacob; ML for Acoustic and Fluids Mechanics modeling;</li>-->
-															<li><b><a href="https://gdalle.github.io/">Guillaume DALLE</a></b> (IPEF, 2019-2022) with Axel Parmentier; OR and ML; Now Researcher at Ponts ParisTech;</li>
-															<li><b><a href="http://quentin-duchemin.alwaysdata.net/">Quentin DUCHEMIN</a></b> (DIM Math Innov, 2019-2022) with Claire Lacour; Random Graphs and Post-Selection Inference; Now Researcher at SDSC (EPFL);</li>
-															<li><b><a href="https://rpetit.github.io/">Romain PETIT</a></b> (DIM Math Innov, 2019-2022) with Vincent Duval; Off-the-grid methods; Now Post-Doc at DMI ENS Paris;</li>
-															<li><b>Antoine VILLIÉ</b> (LBBE, 2019-2022) with Laurent Jacob; Kernel Post-Selection Inference; Senior Researcher at Aurobac Therapeutics </li>
-															<li><b>Ernesto ARAYA</b> (Orsay grant, 2017-2020); Random Graphs; Post-Doc in Machine Learning;</li>
-															<li><b>Jiali MEI</b> (ÉDF CIFRE, 2014-2017) with Jean-Marc Azaïs, Yannig Goude and Georges Hébrail;
-															"<i>Time series recovery and prediction with regression-enhanced nonnegative matrix factorization applied to electricity consumption</i>";
-															Prix Paul Caseau de l'académie des sciences, 2018;
-															Senior Researcher at BNP Paribas.
-															</li>
-															<!--<li><b>Jérôme Alexis CHEVALIER</b> (Started in 2017) with Joseph Salmon and Bertrand Thirion; Statistical Learning.-->
-															<!--</li>-->
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li>
+                                                        <b>Bruna ARAUJO</b> (ShapeMed, Start Oct 2025) with Kaniav Kamary and Vivian Viallon; <br><i>Variational methods for causal inference in epidemiology.</i>
+                                                    </li>
+                                                    <li>
+                                                        <b>Romane GIARD</b> (ECL, Start Oct 2024) with Clément Marteau; <br><i>Towards optimal statistical bounds and algorithms for Unsupervised Learning.</i>
+                                                    </li>
+                                                    <li>
+                                                        <b>Martin GJORGJEVSKI</b> (ANR GrandMa, Start Sep 2022) with Nicolas Keriven and Simon Barthelmé; <br><i>Signal on Graphs.</i>
+                                                    </li>
+                                                    <li>
+                                                        <b><a href="https://gdalle.github.io/">Guillaume DALLE</a></b> (IPEF, 2019-2022) with Axel Parmentier; <br><i>OR and ML</i>. Now Researcher at Ponts ParisTech.
+                                                    </li>
+                                                    <li>
+                                                        <b><a href="http://quentin-duchemin.alwaysdata.net/">Quentin DUCHEMIN</a></b> (DIM Math Innov, 2019-2022) with Claire Lacour; <br><i>Random Graphs and Post-Selection Inference</i>. Now Researcher at SDSC (EPFL).
+                                                    </li>
+                                                    <li>
+                                                        <b><a href="https://rpetit.github.io/">Romain PETIT</a></b> (DIM Math Innov, 2019-2022) with Vincent Duval; <br><i>Off-the-grid methods</i>. Now Post-Doc at DMI ENS Paris.
+                                                    </li>
+                                                    <li>
+                                                        <b>Antoine VILLIÉ</b> (LBBE, 2019-2022) with Laurent Jacob; <br><i>Kernel Post-Selection Inference</i>. Senior Researcher at Aurobac Therapeutics.
+                                                    </li>
+                                                    <li>
+                                                        <b>Ernesto ARAYA</b> (Orsay grant, 2017-2020); <br><i>Random Graphs</i>. Post-Doc in Machine Learning.
+                                                    </li>
+                                                    <li>
+                                                        <b>Jiali MEI</b> (ÉDF CIFRE, 2014-2017) with Jean-Marc Azaïs, Yannig Goude and Georges Hébrail; <br>
+                                                        "<i>Time series recovery and prediction with regression-enhanced nonnegative matrix factorization applied to electricity consumption</i>".<br>
+                                                        Prix Paul Caseau de l'académie des sciences, 2018. Senior Researcher at BNP Paribas.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-														</ul>
-
-												<!--</div>-->
-
-											</div>
-											<header id="duty" class="major">
-												<h2>Post-Docs</h2>
-												</header>
-												<div class="row">
-												<ul>
-														<li>
-															Gaël Poux (2025-2026), Bio-Statistics at IARC, WHO.
-														</li>
-														<li> Nicolas Jouvin (2021), Sparse regularization on measures.
-														Now Chargé de Recherche @INRAE;</li>
-														</li>
-														<li>
-														Luca Mencarelli (2018-2020), Matrix factorization for Time Series;
-														</li>
-														<li>
-														Guillaume Mijoule (2018-2019), Semi-discrete Optimal Transport. Now Data Scientist in Paris Greater Area.
-														</li>
-												</ul>
-											</div>
+                                        <h3>Post-Docs</h3>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li><b>Gaël Poux</b> (2025-2026), Bio-Statistics at IARC, WHO.</li>
+                                                    <li><b>Nicolas Jouvin</b> (2021), Sparse regularization on measures. Now Chargé de Recherche @INRAE.</li>
+                                                    <li><b>Luca Mencarelli</b> (2018-2020), Matrix factorization for Time Series.</li>
+                                                    <li><b>Guillaume Mijoule</b> (2018-2019), Semi-discrete Optimal Transport. Now Data Scientist in Paris Greater Area.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
 									</section>
 
-
-
-							<!-- Section -->
-								<section>
+							<section>
 									<header id="teaching" class="major">
 										<h2>Teaching</h2>
 									</header>
 									<p>
-										My office hours are on Monday 1pm-3pm room E6203.
+										<strong>Office Hours:</strong> Monday 1pm-3pm, Room E6203.
 									</p>
 									<p>
-									<ul>
-										<li>
-											<b>Machine Learning</b> (2nd year -- Master 1), more detail at <a href="http://machine-learning-centrale.github.io">machine-learning-centrale.github.io </a>.
-
-										</li>
-										<li>
-											<b>Convexity and Parsimony</b> (3rd year -- Master 2) more detail at <a href="http://statistical-learning-centrale.github.io">statistical-learning-centrale.github.io </a>.
-										</li>
-									</ul>
+									    <ul>
+										    <li>
+											    <b>Machine Learning</b> (2nd year -- Master 1) <br> More detail at <a href="http://machine-learning-centrale.github.io">machine-learning-centrale.github.io </a>.
+										    </li>
+										    <li>
+											    <b>Convexity and Parsimony</b> (3rd year -- Master 2) <br> More detail at <a href="http://statistical-learning-centrale.github.io">statistical-learning-centrale.github.io </a>.
+										    </li>
+									    </ul>
 									</p>
 								</section>
-							<!-- Section -->
-								<section>
+
+							<section>
 									<header id="vitae" class="major">
 										<h2>Vitae</h2>
 									</header>
 									<div class="table-wrapper">
-									<table>
-									<tbody>
-										<tr>
-											<td>Spring 2023</td>
-											<td>First class Professor (say, Full Professor) by CNU (French Applied Mathematicians peers)</td>
-										</tr>
-										<tr>
-											<td>2022 - 2027</td>
-											<td>Junior member of <a href="https://www.iufrance.fr/">Institut universitaire de France</a></td>
-										</tr>
-										<tr>
-											<td>Since 2019</td>
-											<td>Professor at <a href="http://math.univ-lyon1.fr/">Institut Camille Jordan</a>, École Centrale Lyon</td>
-										</tr>
-										<tr>
-											<td>2018-2019</td>
-											<td>Permanent Senior Researcher at <a href="https://cermics-lab.enpc.fr/">CERMICS</a>, École Ponts ParisTech</td>
-										</tr>
-										<tr>
-											<td>2017-2018</td>
-											<td>Invited Researcher at Inria Paris, MOKAPLAN Team</td>
-										</tr>
-										<tr>
-											<td>Nov. 2016</td>
-											<td><a href="research/hdr.pdf">H.D.R</a> (say, Associate/tenured Professorship *degree*)
-											</td>
-										</tr>
-										<tr>
-											<td>2012-2016</td>
-											<td> Maître de Conférences at <a href="https://www.math.u-psud.fr/">Institut de Mathématique d'Orsay</a></td>
-										</tr>
-										<tr>
-											<td>Dec. 2011</td>
-										<td><a href="research/thesis.pdf">Ph.D. thesis</a></td>
-									</tr>
-											<td>2008-2012</td>
-											<td>Ph.D. at <a href="http://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a> with J.-M. Azaïs and F. Barthe</td>
-											</tr>
-										<tr>
-											<td>2004-2009</td>
-											<td>Student at <a href="http://www.ens.fr/">&Eacute;cole Normale Supérieure</a></td>
-											<td></td>
-										</tr>
-									</tbody>
-									</table>
+                                        <table class="alt">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 20%; font-weight: bold;">Spring 2023</td>
+                                                    <td>Full Professor (Promoted by CNU)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">2022 - 2027</td>
+                                                    <td>Junior Member, <a href="https://www.iufrance.fr/">Institut Universitaire de France (IUF)</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">Since 2019</td>
+                                                    <td>Professor, <a href="http://math.univ-lyon1.fr/">Institut Camille Jordan</a>, École Centrale Lyon</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">2018-2019</td>
+                                                    <td>Senior Researcher, <a href="https://cermics-lab.enpc.fr/">CERMICS</a>, École Ponts ParisTech</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">2017-2018</td>
+                                                    <td>Invited Researcher, Inria Paris (MOKAPLAN Team)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">Nov 2016</td>
+                                                    <td><a href="research/hdr.pdf">Habilitation (H.D.R)</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">2012-2016</td>
+                                                    <td>Associate Professor, <a href="https://www.math.u-psud.fr/">Institut de Mathématique d'Orsay</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">Dec 2011</td>
+                                                    <td><a href="research/thesis.pdf">Ph.D. Thesis</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">2008-2012</td>
+                                                    <td>Ph.D. Student, <a href="http://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">2004-2009</td>
+                                                    <td>Student, <a href="http://www.ens.fr/">&Eacute;cole Normale Supérieure</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 									</div>
 								</section>
-							<!-- Section -->
-								<section>
+
+							<section>
 									<header id="contact" class="major">
 										<h2>Contact</h2>
 									</header>
-
-									<ul class="contact">
-										<li class="fa-envelope-o"><a href="mailto:yohann.de-castro@ec-lyon.fr">yohann.de-castro@ec-lyon.fr</a></li>
-										<li class="fa-phone">+33 (0)4 72 18 67 90 </li>
-										<li class="fa-home">
-											Institut Camille Jordan
-											<br>
-											École Centrale de Lyon
-											<br>
-											36 Avenue Guy de Collongue
-											<br>
-											69134 Écully, France
-									</ul>
+                                    <div class="row">
+                                        <div class="col-6 col-12-small">
+                                            <ul class="contact">
+                                                <li class="fa-envelope-o"><a href="mailto:yohann.de-castro@ec-lyon.fr">yohann.de-castro@ec-lyon.fr</a></li>
+                                                <li class="fa-phone">+33 (0)4 72 18 67 90</li>
+                                                <li class="fa-linkedin"><a href="https://www.linkedin.com/in/yohanndecastro/">LinkedIn Profile</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-12-small">
+                                            <ul class="contact">
+                                                <li class="fa-home">
+                                                    <strong>Institut Camille Jordan</strong><br>
+                                                    École Centrale de Lyon<br>
+                                                    36 Avenue Guy de Collongue<br>
+                                                    69134 Écully, France
+                                                </li>
+                                                <li class="fa-map-marker"><a href="https://drive.google.com/open?id=1vdY9bHQP9or9NOJrJFK2WfeYo-qvcObR&usp=sharing">Locate on Map</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
 								</section>
 						</div>
 					</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
+				<div id="sidebar">
 						<div class="inner">
-
-
-
-							<!-- Menu -->
-								<nav id="menu">
+							<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<!--<li><a href="index.html">Overview</a></li>-->
-										<!--<li><a href="#duty">Duty</a></li>-->
-										<li><a href="#publications">Research</a></li>
-										<li><a href="#phd">PhD Students</a></li>
+										<li><a href="#header">Home</a></li>
+										<li><a href="#publications-section">Research</a></li>
+										<li><a href="#supervision">PhD Students & Post-Docs</a></li>
 										<li><a href="#teaching">Teaching</a></li>
 										<li><a href="#vitae">Vitae</a></li>
 										<li><a href="#contact">Contact</a></li>
 									</ul>
 								</nav>
 
-
-							<!-- Section -->
-								<section>
-									<!--<header class="major">-->
-									<!--	<h2>Get in touch</h2>-->
-									<!--</header>-->
-									<ul class="contact">
-										<li class="fa-envelope-o">yohann.de-castro (at) ec-lyon.fr</li>
-										<li class="fa-map-marker"><a href="https://drive.google.com/open?id=1vdY9bHQP9or9NOJrJFK2WfeYo-qvcObR&usp=sharing">Yohann's @ECL</a></li>
-										<li class="fa-home">
-											Institut Camille Jordan
-											<br>
-											École Centrale de Lyon
-											<br>
-											36 Avenue Guy de Collongue
-											<br>
-											69134 Écully, France
-										<!--<br />-->
-										<!--	&Eacute;quipe MoKaPlan,<br />-->
-										<!--INRIA Paris<br />-->
-										</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<!--<footer id="footer">-->
-								<!--	<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
-								<!--</footer>-->
+							<footer id="footer">
+									<p class="copyright">&copy; Yohann De Castro. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
 
 						</div>
-
 					</div>
-
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+            <script>
+                // Function to toggle theme
+                function toggleTheme() {
+                    document.body.classList.toggle('dark-mode');
+                    const isDark = document.body.classList.contains('dark-mode');
+                    // Save preference
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                    // Update icon
+                    updateToggleIcon(isDark);
+                }
+
+                // Helper to update the icon class
+                function updateToggleIcon(isDark) {
+                    const icon = document.querySelector('#theme-toggle .icon');
+                    if (icon) {
+                        icon.classList.remove('fa-moon-o', 'fa-sun-o');
+                        icon.classList.add(isDark ? 'fa-sun-o' : 'fa-moon-o');
+                    }
+                }
+
+                // Initialize based on saved preference
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-mode');
+                    updateToggleIcon(true);
+                } else {
+                    updateToggleIcon(false);
+                }
+            </script>
 
 	</body>
 </html>
