@@ -5,16 +5,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-3278327-4']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQN2SELGH6"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-CQN2SELGH6');
 		</script>
         <style>
             /* --- Custom Overrides --- */
@@ -189,19 +186,19 @@
 									<div class="content">
                                         <ul class="alt">
                                             <li>
-                                                <strong>[Dec 2025]</strong> New paper <a href="research/paper45.pdf">Gaussian random field's anisotropy using excursion sets</a> with J.-M. Azaïs and F. Dalmao. <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">GitHub</a>
+                                                <strong>[May 2026]</strong> Paper <a href="research/paper42.pdf">Node Regression on Latent Position Random Graphs via Local Averaging</a> with M. Gjorgjevski, N. Keriven and S. Barthelmé accepted to the Journal of Machine Learning Research (JMLR). <a href="http://arxiv.org/abs/2410.21987" class="button small">arXiv</a>
+                                            </li>
+                                            <li>
+                                                <strong>[May 2026]</strong> New paper <a href="research/paper46.pdf">Fast Spawn&amp;Prune (FS&amp;P): Global convergence of stochastic conic particle gradient descent via birth/death process</a> with S. Gadat and C. Marteau, under review. <a href="https://github.com/ydecastro/Fast-Spawn-Prune" class="button small">Code</a>
+                                            </li>
+                                            <li>
+                                                <strong>[May 2026]</strong> New version of <a href="research/paper41.pdf">Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems</a> with P.-C. Aubin-Frankowski, A. Parmentier and A. Rudi, under review. <a href="http://arxiv.org/abs/2407.17200" class="button small">arXiv</a>
+                                            </li>
+                                            <li>
+                                                <strong>[Dec 2025]</strong> New paper <a href="research/paper45.pdf">Gaussian random field's anisotropy using excursion sets</a> with J.-M. Azaïs and F. Dalmao, under review. <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">Code</a>
                                             </li>
                                             <li>
                                                 <strong>[Dec 2025]</strong> New version of <a href="research/paper40.pdf">Second Maximum of a Gaussian Random Field and Exact (t-)Spacing test</a> with J.-M. Azaïs and F. Dalmao, under review.
-                                            </li>
-                                            <li>
-                                                <strong>[Sep 2025]</strong> New paper <a href="research/paper43.pdf">Gaussian Mixture Model with unknown diagonal covariances via continuous sparse regularization</a> with R. Giard and C. Marteau, under review.
-                                            </li>
-                                            <li>
-                                                <strong>[Sep 2025]</strong> New version of <a href="research/paper39.pdf">FastPart: Over-Parameterized Stochastic Gradient Descent for Sparse optimisation on Measures</a> available. <a href="http://arxiv.org/abs/2312.05993" class="button small">arXiv</a>
-                                            </li>
-                                            <li>
-                                                <strong>[Jul 2025]</strong> New paper <a href="research/paper44.pdf">Effective regions and kernels in continuous sparse regularisation</a> with R. Gribonval and N. Jouvin.
                                             </li>
                                         </ul>
 									</div>
@@ -248,23 +245,36 @@
                                 <div class="filter-container">
                                     <span class="filter-label">Filter by Theme:</span>
                                     <button class="btn active" onclick="filterSelection('all')">Show All</button>
-                                    <button class="btn" onclick="filterSelection('opt')">Optimization & Inverse Problems</button>
-                                    <button class="btn" onclick="filterSelection('geom')">Learning, Graphs & Geometry</button>
-                                    <button class="btn" onclick="filterSelection('prob')">Probability & Processes</button>
-                                    <button class="btn" onclick="filterSelection('alg')">Algebra & Design</button>
+                                    <button class="btn" onclick="filterSelection('opt')">Optimization &amp; Inverse Problems</button>
+                                    <button class="btn" onclick="filterSelection('geom')">Learning, Graphs &amp; Geometry</button>
+                                    <button class="btn" onclick="filterSelection('prob')">Probability &amp; Processes</button>
+                                    <button class="btn" onclick="filterSelection('alg')">Algebra &amp; Design</button>
                                 </div>
 
                                 <ul class="pub-list" style="list-style: none; padding-left: 0;">
+
+                                    <li class="filter-div opt prob">
+                                        <div class="pub-item">
+                                            <strong>Fast Spawn&amp;Prune (FS&amp;P): Global convergence of stochastic conic particle gradient descent via birth/death process.</strong><br>
+                                            Y. De Castro, S. Gadat, C. Marteau.<br>
+                                            <em>Under review</em>, 2026.<br>
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper46.pdf" class="button small">PDF</a>
+                                            <a href="https://github.com/ydecastro/Fast-Spawn-Prune" class="button small">Code</a>
+                                        </div>
+                                    </li>
 
                                     <li class="filter-div prob geom">
                                         <div class="pub-item">
                                             <strong>Gaussian random field's anisotropy using excursion sets.</strong><br>
                                             J.-M. Azaïs, Y. De Castro, F. Dalmao.<br>
                                             <em>Under review</em>, 2025.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Geometry</span>
                                             <a href="research/paper45.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/2512.11085" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -273,10 +283,11 @@
                                             <strong>Second Maximum of a Gaussian Random Field and Exact (t-)Spacing test.</strong><br>
                                             J.-M. Azaïs, Y. De Castro, F. Dalmao.<br>
                                             <em>Under review</em>, 2025.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Geometry</span>
                                             <a href="research/paper40.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/tensor-spacing" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/2406.18397" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -285,55 +296,59 @@
                                             <strong>Gaussian Mixture Model with unknown diagonal covariances via continuous sparse regularization.</strong><br>
                                             Y. De Castro, R. Giard, C. Marteau.<br>
                                             <em>Under review</em>, 2025.<br>
-                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper43.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2509.12889" class="button small">arXiv</a>
                                             <a href="https://doi.org/10.5281/zenodo.16942355" class="button small">Zenodo</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div geom opt">
                                         <div class="pub-item">
                                             <strong>Effective regions and kernels in continuous sparse regularization.</strong><br>
                                             Y. De Castro, R. Gribonval, N. Jouvin.<br>
                                             <em>Under review</em>, 2025.<br>
                                             <span class="tag tag-geom">Learning</span>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper44.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2507.08444" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
-									<li class="filter-div geom opt">
-										<div class="pub-item">
-											<strong>Node Regression on Latent Position Random Graphs via Local Averaging</strong><br>
-											Martin Gjorgjevski, Nicolas Keriven, Simon Barthelmé, Yohann De Castro.<br>
-											<em>Under review</em>, 2025.<br>
-											<span class="tag tag-geom">Graph</span>
-											<span class="tag tag-opt">Optimization</span>
-											<a href="research/paper42.pdf" class="button small">PDF</a>
-										</div>
-									</li>
+                                    <li class="filter-div geom opt">
+                                        <div class="pub-item">
+                                            <strong>Node Regression on Latent Position Random Graphs via Local Averaging.</strong><br>
+                                            M. Gjorgjevski, N. Keriven, S. Barthelmé, Y. De Castro.<br>
+                                            <em>Journal of Machine Learning Research (JMLR)</em>, to appear.<br>
+                                            <span class="tag tag-geom">Graphs</span>
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper42.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2410.21987" class="button small">arXiv</a>
+                                        </div>
+                                    </li>
 
-									<li class="filter-div geom opt">
-										<div class="pub-item">
-											<strong>Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems</strong> <br>
-											Pierre-Cyril Aubin-Frankowski, Yohann De Castro, Axel Parmentier, Alessandro Rudi.<br>
-											<em>Under review</em>, 2025.<br>
-											<span class="tag tag-geom">Learning</span>
-											<span class="tag tag-opt">Optimization</span>
-											<a href="research/paper41.pdf" class="button small">PDF</a>
-										</div>
-									</li>
+                                    <li class="filter-div geom opt">
+                                        <div class="pub-item">
+                                            <strong>Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems.</strong><br>
+                                            P.-C. Aubin-Frankowski, Y. De Castro, A. Parmentier, A. Rudi.<br>
+                                            <em>Under review</em>, 2025.<br>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <a href="research/paper41.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2407.17200" class="button small">arXiv</a>
+                                        </div>
+                                    </li>
 
                                     <li class="filter-div opt prob">
                                         <div class="pub-item">
-                                            <strong>FastPart: Over-Parameterized Stochastic Gradient Descent for Sparse optimisation on Measures.</strong><br>
+                                            <strong>FastPart: Over-Parameterized Stochastic Gradient Descent for Sparse optimization on Measures.</strong><br>
                                             Y. De Castro, S. Gadat, C. Marteau.<br>
-                                            <em>ArXiv Preprint</em>, 2023 (Revised 2025).<br>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <em>arXiv Preprint</em>, 2023 (Revised 2025).<br>
+                                            <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper39.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2312.05993" class="button small">ArXiv</a>
+                                            <a href="http://arxiv.org/abs/2312.05993" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -345,6 +360,7 @@
                                             <span class="tag tag-opt">Inverse Problems</span>
                                             <a href="research/paper38.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/rpetit/2023-support-recovery-tv" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/2307.03709" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -352,11 +368,12 @@
                                         <div class="pub-item">
                                             <strong>SIGLE: valid Selective Inference procedure for Generalized Linear Lasso.</strong><br>
                                             Y. De Castro, Q. Duchemin.<br>
-                                            <em>Under review</em>.<br>
+                                            <em>Under review</em>, 2022.<br>
                                             <span class="tag tag-geom">Learning</span>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper36.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/quentin-duchemin/SIGLE" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/2203.15348" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -365,36 +382,38 @@
                                             <strong>Neural Networks beyond explainability: Selective inference for sequence motifs.</strong><br>
                                             Y. De Castro, A. Villié, P. Veber, L. Jacob.<br>
                                             <em>Transactions on Machine Learning Research (TMLR)</em>, 2023.<br>
-                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper37.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2212.12542" class="button small">arXiv</a>
                                             <a href="https://openreview.net/forum?id=nddEHTSnqg" class="button small">OpenReview</a>
                                         </div>
                                     </li>
 
-									<li class="filter-div geom prob">
-										<div class="pub-item">
-											<strong>Random Geometric Graph: Some recent developments and perspectives.</strong><br>
-											Q. Duchemin, Y. De Castro.<br>
-											<em> High Dimensional Probability IX, pp 347–392</em>, 2023.<br>
-											<span class="tag tag-geom">Graphs</span>
-											<span class="tag tag-prob">Probability</span>
-											<a href="research/paper33.pdf" class="button small">PDF</a>
-										</div>
-									</li>
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Random Geometric Graph: Some recent developments and perspectives.</strong><br>
+                                            Q. Duchemin, Y. De Castro.<br>
+                                            <em>High Dimensional Probability IX</em>, pp 347–392, 2023.<br>
+                                            <span class="tag tag-geom">Graphs</span>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper33.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2203.15351" class="button small">arXiv</a>
+                                        </div>
+                                    </li>
 
-									<li class="filter-div geom prob">
-										<div class="pub-item">
-											<strong>Minimax Estimation of Partially-Observed Vector AutoRegressions.
-											</strong><br>
-											Guillaume Dalle, Yohann De Castro.<br>
-											<em> Electronic Journal of Statistics</em>, 2025.<br>
-											<span class="tag tag-geom">Graphs</span>
-											<span class="tag tag-prob">Probability</span>
-											<a href="research/paper34.pdf" class="button small">PDF</a>
+                                    <li class="filter-div geom prob">
+                                        <div class="pub-item">
+                                            <strong>Minimax Estimation of Partially-Observed Vector AutoRegressions.</strong><br>
+                                            G. Dalle, Y. De Castro.<br>
+                                            <em>Electronic Journal of Statistics</em>, 2025.<br>
+                                            <span class="tag tag-geom">Graphs</span>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper34.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/gdalle/POVAR2.jl" class="button small">Code</a>
-										</div>
-									</li>
+                                            <a href="http://arxiv.org/abs/2106.09327" class="button small">arXiv</a>
+                                        </div>
+                                    </li>
 
                                     <li class="filter-div geom prob">
                                         <div class="pub-item">
@@ -402,9 +421,10 @@
                                             Y. De Castro, Q. Duchemin.<br>
                                             <em>Electronic Journal of Statistics</em>, 16, 671-699, 2022.<br>
                                             <span class="tag tag-geom">Graphs</span>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper28.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/quentin-duchemin/Markovian-random-geometric-graph#readme" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/2006.07001" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -416,18 +436,20 @@
                                             <span class="tag tag-opt">Inverse Problems</span>
                                             <a href="research/paper32.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/rpetit/tvsfw" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/2104.06706" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div geom prob">
                                         <div class="pub-item">
                                             <strong>Multiple Testing and Variable Selection along Least Angle Regression's path.</strong><br>
-                                            Y. De Castro, J-M Azaïs.<br>
-                                            <em>Information & Inference</em>, 2022.<br>
+                                            Y. De Castro, J.-M. Azaïs.<br>
+                                            <em>Information &amp; Inference</em>, 2022.<br>
                                             <span class="tag tag-geom">Learning</span>
-                                            <span class="tag tag-prob">Probability</span> 
-											<a href="research/paper25.pdf" class="button small">PDF</a>
+                                            <span class="tag tag-prob">Probability</span>
+                                            <a href="research/paper25.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/lar_testing/" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/1906.12072" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -435,13 +457,13 @@
                                         <div class="pub-item">
                                             <strong>Three rates of convergence or separation via U-statistics in a dependent framework.</strong><br>
                                             Y. De Castro, Q. Duchemin, C. Lacour.<br>
-                                            <em>Journal of Machine Learning Research</em>, 23(201), 1-59, 2022.<br>
+                                            <em>Journal of Machine Learning Research (JMLR)</em>, 23(201), 1-59, 2022.<br>
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="https://www.jmlr.org/papers/volume23/21-0819/21-0819.pdf" class="button small">PDF</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div geom prob">
                                         <div class="pub-item">
                                             <strong>Concentration inequality for U-statistics of order two for uniformly ergodic Markov chains.</strong><br>
@@ -450,6 +472,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper30.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2011.11435" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -458,9 +481,10 @@
                                             <strong>SuperMix: Sparse Regularization for Mixtures.</strong><br>
                                             Y. De Castro, S. Gadat, C. Marteau, C. Maugis-Rabusseau.<br>
                                             <em>Annals of Statistics</em>, 49(3), 1779-1809, 2021.<br>
-                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper26.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1907.10592" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -469,7 +493,7 @@
                                             <strong>Dual optimal design and the Christoffel-Darboux polynomial.</strong><br>
                                             Y. De Castro, F. Gamboa, D. Henrion, J.-B. Lasserre.<br>
                                             <em>Optimization Letters</em>, 15, 3-8, 2021.<br>
-                                            <span class="tag tag-alg">Design</span> 
+                                            <span class="tag tag-alg">Design</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper29.pdf" class="button small">PDF</a>
                                         </div>
@@ -479,10 +503,11 @@
                                         <div class="pub-item">
                                             <strong>Forecasting Nonnegative Time Series via Sliding Mask Method (SMM).</strong><br>
                                             Y. De Castro, L. Mencarelli.<br>
-                                            <em>ArXiv Preprint</em>, 2021.<br>
-                                            <span class="tag tag-geom">Learning</span> 
+                                            <em>arXiv Preprint</em>, 2021.<br>
+                                            <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper31.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/2102.05314" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -495,6 +520,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper21.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/super-resolution-testing/" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/1706.00679" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -503,9 +529,10 @@
                                             <strong>Latent distance estimation for random geometric graphs.</strong><br>
                                             Y. De Castro, E. Araya.<br>
                                             <em>NeurIPS</em>, 2019.<br>
-                                            <span class="tag tag-geom">Geometry</span> 
+                                            <span class="tag tag-geom">Geometry</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper27.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1909.06841" class="button small">arXiv</a>
                                             <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/c4414e538a5475ec0244673b7f2f7dbb-Paper.pdf" class="button small">PMLR</a>
                                         </div>
                                     </li>
@@ -518,6 +545,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper23.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1806.09810" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -526,21 +554,23 @@
                                             <strong>Approximate Optimal Designs for Multivariate Polynomial Regression.</strong><br>
                                             Y. De Castro, F. Gamboa, D. Henrion, R. Hess, J.-B. Lasserre.<br>
                                             <em>Annals of Statistics</em>, 47(1), 127–155, 2019.<br>
-                                            <span class="tag tag-alg">Algebra</span> 
+                                            <span class="tag tag-alg">Algebra</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper20.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/optimal-design-sum-of-squares/" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/1706.04059" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
                                     <li class="filter-div geom prob">
                                         <div class="pub-item">
                                             <strong>Nonnegative Matrix Factorization with Side Information for Time Series Recovery.</strong><br>
-                                            Y. De Castro, J-M Azaïs, Y. Goude, G. Hébrail, J. Mei.<br>
+                                            Y. De Castro, J.-M. Azaïs, Y. Goude, G. Hébrail, J. Mei.<br>
                                             <em>IEEE Trans. Knowledge and Data Engineering</em>, 31(3), 2019.<br>
-                                            <span class="tag tag-geom">Learning</span> 
+                                            <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper18.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1709.06320" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -548,42 +578,46 @@
                                         <div class="pub-item">
                                             <strong>Sparse Recovery from Extreme Eigenvalues Deviation Inequalities.</strong><br>
                                             Y. De Castro, S. Dallaporta.<br>
-                                            <em>ESAIM P&S</em>, 23, 430-463, 2019.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <em>ESAIM P&amp;S</em>, 23, 430-463, 2019.<br>
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper16.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1604.01171" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div alg opt">
                                         <div class="pub-item">
-                                            <strong>A short introduction to Moment-SoS hierarchies</strong><br>
+                                            <strong>A short introduction to Moment-SoS hierarchies.</strong><br>
                                             Y. De Castro.<br>
                                             <em>Deuxième Congrès National de la SMF</em>, 2018.<br>
                                             <span class="tag tag-alg">Algebra</span>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper24.pdf" class="button small">PDF</a>
                                         </div>
                                     </li>
+
                                     <li class="filter-div geom prob">
                                         <div class="pub-item">
                                             <strong>Adaptive Estimation of Nonparametric Geometric Graphs.</strong><br>
                                             Y. De Castro, C. Lacour, T. M. Pham Ngoc.<br>
                                             <em>Mathematical Statistics and Learning</em>, 2(3/4), 2019.<br>
-                                            <span class="tag tag-geom">Graphs</span> 
+                                            <span class="tag tag-geom">Graphs</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper22.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1708.02107" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
                                     <li class="filter-div opt geom">
                                         <div class="pub-item">
                                             <strong>Nonnegative Matrix Factorization for Time Series Recovery From a Few Temporal Aggregates.</strong><br>
-                                            Jiali Mei, Yohann De Castro, Yannig Goude, Georges Hébrail.<br>
+                                            J. Mei, Y. De Castro, Y. Goude, G. Hébrail.<br>
                                             <em>ICML</em>, 2017.<br>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper17.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1610.01492" class="button small">arXiv</a>
                                             <a href="https://proceedings.mlr.press/v70/mei17a.html" class="button small">PMLR</a>
                                         </div>
                                     </li>
@@ -593,9 +627,10 @@
                                             <strong>Power of the Spacing test for Least-Angle Regression.</strong><br>
                                             Y. De Castro, J.-M. Azaïs, S. Mourareau.<br>
                                             <em>Bernoulli Journal</em>, 24(1), 2018.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper12.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1503.05093" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -604,43 +639,47 @@
                                             <strong>Exact solutions to Super Resolution on semi-algebraic domains in higher dimensions.</strong><br>
                                             Y. De Castro, F. Gamboa, D. Henrion, J.-B. Lasserre.<br>
                                             <em>IEEE Trans. Info. Theory</em>, 63(1), 2017.<br>
-                                            <span class="tag tag-alg">Algebra</span> 
+                                            <span class="tag tag-alg">Algebra</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper13.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/total-variation-sum-of-squares/" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/1502.02436" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div opt geom">
                                         <div class="pub-item">
                                             <strong>Adapting to Unknown Noise Level in Sparse Deconvolution.</strong><br>
                                             Y. De Castro, C. Boyer, J. Salmon.<br>
-                                            <em>Information & Inference</em>, 6(3), 2017.<br>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <em>Information &amp; Inference</em>, 6(3), 2017.<br>
+                                            <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper14.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1606.04760" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div geom alg">
                                         <div class="pub-item">
                                             <strong>Reconstructing undirected graphs from eigenspaces.</strong><br>
                                             Y. De Castro, T. Espinasse, P. Rochet.<br>
-                                            <em>JMLR</em>, 18(51), 2017.<br>
-                                            <span class="tag tag-geom">Graphs</span> 
+                                            <em>Journal of Machine Learning Research (JMLR)</em>, 18(51), 2017.<br>
+                                            <span class="tag tag-geom">Graphs</span>
                                             <span class="tag tag-alg">Algebra</span>
                                             <a href="research/paper15.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1603.08113" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div prob geom">
                                         <div class="pub-item">
                                             <strong>A Rice method proof of the Null-Space Property over the Grassmannian.</strong><br>
                                             Y. De Castro, J.-M. Azaïs, S. Mourareau.<br>
                                             <em>Annales de l'Institut Henri Poincaré</em>, 53(4), 2017.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Geometry</span>
                                             <a href="research/paper7.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1405.6417" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -648,23 +687,25 @@
                                         <div class="pub-item">
                                             <strong>Minimax adaptive estimation of non-parametric Hidden Markov Models.</strong><br>
                                             Y. De Castro, É. Gassiat, C. Lacour.<br>
-                                            <em>JMLR</em>, 17(111), 2016.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <em>Journal of Machine Learning Research (JMLR)</em>, 17(111), 2016.<br>
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper11.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/nonparametric-hmm" class="button small">Code</a>
+                                            <a href="http://arxiv.org/abs/1501.04787" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div prob geom">
-                                            <div class="pub-item">
-                                                <strong>Non-uniform spline recovery from small degree polynomial approximation</strong><br>
-                                                Yohann De Castro and Guillaume Mijoule.<br>
-                                                <em>Journal of Mathematical Analysis and Applications</em>, Pages 971-992, 2015.<br>
-                                                <span class="tag tag-opt">Optimization</span> 
-                                                <span class="tag tag-geom">Learning</span>
-                                                 <a href="research/paper9.pdf" class="button small">PDF</a>
-                                            </div>
+                                        <div class="pub-item">
+                                            <strong>Non-uniform spline recovery from small degree polynomial approximation.</strong><br>
+                                            Y. De Castro, G. Mijoule.<br>
+                                            <em>Journal of Mathematical Analysis and Applications (JMAA)</em>, Pages 971-992, 2015.<br>
+                                            <span class="tag tag-opt">Optimization</span>
+                                            <span class="tag tag-geom">Learning</span>
+                                            <a href="research/paper9.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1402.5662" class="button small">arXiv</a>
+                                        </div>
                                     </li>
 
                                     <li class="filter-div opt geom">
@@ -672,31 +713,34 @@
                                             <strong>Spike Detection from Inaccurate Samplings.</strong><br>
                                             Y. De Castro, J.-M. Azaïs, F. Gamboa.<br>
                                             <em>ACHA</em>, 38(2), 2015.<br>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper5.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1301.5873" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div prob geom">
                                         <div class="pub-item">
                                             <strong>Randomized pick-freeze for sparse Sobol indices estimation in high dimension.</strong><br>
                                             Y. De Castro, A. Janon.<br>
-                                            <em>ESAIM P&S</em>, 19, 2015.<br>
-                                            <span class="tag tag-prob">Probability</span> 
+                                            <em>ESAIM P&amp;S</em>, 19, 2015.<br>
+                                            <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper10.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1403.5537" class="button small">arXiv</a>
                                         </div>
                                     </li>
-                                    
+
                                     <li class="filter-div alg opt">
                                         <div class="pub-item">
                                             <strong>Optimal designs for Lasso and Dantzig selector using Expander Codes.</strong><br>
                                             Y. De Castro.<br>
                                             <em>IEEE Trans. Info. Theory</em>, 60(11), 2014.<br>
-                                            <span class="tag tag-alg">Design</span> 
+                                            <span class="tag tag-alg">Design</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper2.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1010.2457" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -704,10 +748,11 @@
                                         <div class="pub-item">
                                             <strong>Exact Reconstruction using Beurling Minimal Extrapolation.</strong><br>
                                             Y. De Castro, F. Gamboa.<br>
-                                            <em>JMAA</em>, 395(1), 2012.<br>
+                                            <em>Journal of Mathematical Analysis and Applications (JMAA)</em>, 395(1), 2012.<br>
                                             <span class="tag tag-geom">Learning</span>
-                                            <span class="tag tag-opt">Optimization</span> 
+                                            <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper4.pdf" class="button small">PDF</a>
+                                            <a href="http://arxiv.org/abs/1103.4951" class="button small">arXiv</a>
                                         </div>
                                     </li>
                                 </ul>
