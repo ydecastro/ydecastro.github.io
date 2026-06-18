@@ -1,10 +1,51 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>Yohann DE CASTRO - Professor at Institut Camille Jordan</title>
+		<title>Yohann De Castro — Professor at Institut Camille Jordan</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Professional homepage of Yohann De Castro, Full Professor at Institut Camille Jordan (École Centrale Lyon) and Junior Member of Institut Universitaire de France. Research in statistics, machine learning, optimization, and inverse problems." />
+		<meta name="author" content="Yohann De Castro" />
+		<link rel="canonical" href="https://ydecastro.github.io/" />
+		<link rel="icon" href="images/bulle.png" type="image/png" />
+		<link rel="apple-touch-icon" href="images/bulle.png" />
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Yohann De Castro — Professor at Institut Camille Jordan" />
+		<meta property="og:description" content="Full Professor at Institut Camille Jordan (École Centrale Lyon); Junior Member of Institut Universitaire de France. Research in statistics, machine learning, optimization, and inverse problems." />
+		<meta property="og:url" content="https://ydecastro.github.io/" />
+		<meta property="og:image" content="https://ydecastro.github.io/images/bulle.png" />
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Yohann De Castro — Professor at Institut Camille Jordan" />
+		<meta name="twitter:description" content="Full Professor at Institut Camille Jordan (École Centrale Lyon); Junior Member of Institut Universitaire de France. Research in statistics, machine learning, optimization, and inverse problems." />
+		<meta name="twitter:image" content="https://ydecastro.github.io/images/bulle.png" />
+		<link rel="preconnect" href="https://www.googletagmanager.com" />
+		<link rel="dns-prefetch" href="//scholar.google.fr" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- JSON-LD structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Yohann De Castro",
+			"url": "https://ydecastro.github.io/",
+			"image": "https://ydecastro.github.io/images/bulle.png",
+			"email": "mailto:yohann.de-castro@ec-lyon.fr",
+			"jobTitle": "Full Professor",
+			"affiliation": [
+				{"@type": "Organization", "name": "Institut Camille Jordan", "url": "https://math.univ-lyon1.fr/"},
+				{"@type": "Organization", "name": "École Centrale Lyon"},
+				{"@type": "Organization", "name": "Institut Universitaire de France", "url": "https://www.iufrance.fr/"}
+			],
+			"sameAs": [
+				"https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ",
+				"https://www.linkedin.com/in/yohanndecastro/",
+				"https://github.com/ydecastro",
+				"https://orcid.org/0000-0002-9008-7474"
+			]
+		}
+		</script>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CQN2SELGH6"></script>
 		<script>
@@ -14,10 +55,34 @@
 			gtag('config', 'G-CQN2SELGH6');
 		</script>
         <style>
+            /* --- Accessibility: skip link --- */
+            .skip-link {
+                position: absolute;
+                left: -9999px;
+                top: 0;
+                background: #f56a6a;
+                color: #fff !important;
+                padding: 8px 16px;
+                z-index: 9999;
+                text-decoration: none;
+                border-radius: 0 0 4px 0;
+            }
+            .skip-link:focus { left: 0; }
+
+            /* --- Theme toggle button reset --- */
+            button#theme-toggle {
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+                color: inherit;
+            }
+
             /* --- Custom Overrides --- */
             ul.contact li { margin-bottom: 1.5em; }
             .pub-item { margin-bottom: 0.5em; }
             .pub-item strong { color: #3d4449; }
+
             
             /* --- Filter Styles --- */
             .filter-container { text-align: center; margin-bottom: 30px; }
@@ -60,7 +125,6 @@
             .tag-alg { background-color: #dc3545; }
             
             .pub-item .button.small {
-                float: right;
                 margin-left: 5px;
                 font-size: 0.7em;
                 height: auto;
@@ -73,6 +137,8 @@
                 color: #f56a6a !important;
                 box-shadow: inset 0 0 0 1px #f56a6a;
             }
+            /* Action buttons display inline after tags, preserving source order */
+            .pub-item .button.small + .button.small { margin-left: 4px; }
 
             /* --- Dark Mode Styles --- */
             body.dark-mode {
@@ -139,22 +205,24 @@
 	</head>
 	<body class="is-preload">
 
+		<a class="skip-link" href="#main">Skip to main content</a>
+
 		<div id="wrapper">
 
 				<div id="main">
 						<div class="inner">
 
 							<header id="header">
-									<a href="index.html" class="logo"><strong>Welcome</strong> to my professional homepage!</a>
+									<a href="index.html" class="logo"><strong>Yohann De Castro</strong> — Professor at ICJ</a>
 									<ul class="icons">
                                         <li>
-                                            <a href="#" class="icon fa-moon-o" id="theme-toggle" onclick="toggleTheme(); return false;" title="Toggle Dark Mode">
+                                            <button type="button" class="icon fa-moon-o" id="theme-toggle" onclick="toggleTheme(); return false;" aria-label="Toggle Dark Mode" aria-pressed="false" title="Toggle Dark Mode">
                                                 <span class="label">Dark Mode</span>
-                                            </a>
+                                            </button>
                                         </li>
-                                        <li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="icon fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-										<li><a href="https://www.linkedin.com/in/yohanndecastro/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-										<li><a href="https://github.com/ydecastro" class="icon fa-github"><span class="label">Github</span></a></li>
+                                        <li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="icon fa-graduation-cap" target="_blank" rel="noopener"><span class="label">Google Scholar</span></a></li>
+										<li><a href="https://www.linkedin.com/in/yohanndecastro/" class="icon fa-linkedin" target="_blank" rel="noopener"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://github.com/ydecastro" class="icon fa-github" target="_blank" rel="noopener"><span class="label">Github</span></a></li>
 									</ul>
 								</header>
 
@@ -168,10 +236,10 @@
 											Junior member at <b>Institut universitaire de France</b> (IUF)
 										</p>
 										<ul class="actions">
-											<li><a href="https://github.com/ydecastro" class="button primary">GitHub</a></li>
-											<li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="button primary">G-Scholar</a></li>
-											<li><a href="https://www.linkedin.com/in/yohanndecastro/" class="button primary">LinkedIn</a></li>
-											<li><a href="https://orcid.org/0000-0002-9008-7474" class="button primary">Orcid</a></li>
+											<li><a href="https://github.com/ydecastro" class="button primary" target="_blank" rel="noopener">GitHub</a></li>
+											<li><a href="https://scholar.google.fr/citations?user=3Rdlxg4AAAAJ" class="button primary" target="_blank" rel="noopener">G-Scholar</a></li>
+											<li><a href="https://www.linkedin.com/in/yohanndecastro/" class="button primary" target="_blank" rel="noopener">LinkedIn</a></li>
+											<li><a href="https://orcid.org/0000-0002-9008-7474" class="button primary" target="_blank" rel="noopener">Orcid</a></li>
 										</ul>
 									</div>
 									<div class="image">
@@ -186,22 +254,22 @@
 									<div class="content">
                                         <ul class="alt">
                                             <li>
-                                                <strong>[Jun 2026]</strong> New paper <a href="research/paper47.pdf">Non-asymptotic Tail Bounds for the Kostlan–Shub–Smale Field: Tensor PCA and Spherical k-Spin Complexity</a> with J.-M. Azaïs and F. Dalmao. <a href="https://github.com/ydecastro/TENSOR-KSS" class="button small">Code</a> <a href="http://arxiv.org/abs/2606.17665" class="button small">arXiv</a>
+                                                <strong>[Jun 2026]</strong> New paper <a href="research/paper47.pdf">Non-asymptotic Tail Bounds for the Kostlan–Shub–Smale Field: Tensor PCA and Spherical k-Spin Complexity</a> with J.-M. Azaïs and F. Dalmao. <a href="https://github.com/ydecastro/TENSOR-KSS" class="button small">Code</a> <a href="https://arxiv.org/abs/2606.17665" class="button small">arXiv</a>
                                             </li>
                                             <li>
-                                                <strong>[Jun 2026]</strong> New version of <a href="research/paper44.pdf">Effective regions and kernels in continuous sparse regularization</a> with R. Gribonval and N. Jouvin, accepted for publication in <em>Information &amp; Inference: A Journal of the IMA</em>. <a href="http://arxiv.org/abs/2507.08444" class="button small">arXiv</a>
+                                                <strong>[Jun 2026]</strong> New version of <a href="research/paper44.pdf">Effective regions and kernels in continuous sparse regularization</a> with R. Gribonval and N. Jouvin, accepted for publication in <em>Information &amp; Inference: A Journal of the IMA</em>. <a href="https://arxiv.org/abs/2507.08444" class="button small">arXiv</a>
                                             </li>
                                             <li>
-                                                <strong>[May 2026]</strong> New version of <a href="research/paper31.pdf">Time series forecasting from partial observations via Non-negative Matrix Factorization</a> with L. Mencarelli. <a href="http://arxiv.org/abs/2102.05314" class="button small">arXiv</a>
+                                                <strong>[May 2026]</strong> New version of <a href="research/paper31.pdf">Time series forecasting from partial observations via Non-negative Matrix Factorization</a> with L. Mencarelli. <a href="https://arxiv.org/abs/2102.05314" class="button small">arXiv</a>
                                             </li>
                                             <li>
-                                                <strong>[May 2026]</strong> Paper <a href="research/paper42.pdf">Node Regression on Latent Position Random Graphs via Local Averaging</a> with M. Gjorgjevski, N. Keriven and S. Barthelmé accepted to the Journal of Machine Learning Research (JMLR). <a href="http://arxiv.org/abs/2410.21987" class="button small">arXiv</a>
+                                                <strong>[May 2026]</strong> Paper <a href="research/paper42.pdf">Node Regression on Latent Position Random Graphs via Local Averaging</a> with M. Gjorgjevski, N. Keriven and S. Barthelmé accepted to the <em>Journal of Machine Learning Research (JMLR)</em>. <a href="https://arxiv.org/abs/2410.21987" class="button small">arXiv</a>
                                             </li>
                                             <li>
-                                                <strong>[May 2026]</strong> New paper <a href="research/paper46.pdf">Fast Spawn&amp;Prune (FS&amp;P): Global convergence of stochastic conic particle gradient descent via birth/death process</a> with S. Gadat and C. Marteau, under review. <a href="https://github.com/ydecastro/Fast-Spawn-Prune" class="button small">Code</a> <a href="http://arxiv.org/abs/2605.19784" class="button small">arXiv</a>
+                                                <strong>[May 2026]</strong> New paper <a href="research/paper46.pdf">Fast Spawn&amp;Prune (FS&amp;P): Global convergence of stochastic conic particle gradient descent via birth/death process</a> with S. Gadat and C. Marteau, under review. <a href="https://github.com/ydecastro/Fast-Spawn-Prune" class="button small">Code</a> <a href="https://arxiv.org/abs/2605.19784" class="button small">arXiv</a>
                                             </li>
                                             <li>
-                                                <strong>[May 2026]</strong> New version of <a href="research/paper41.pdf">Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems</a> with P.-C. Aubin-Frankowski, A. Parmentier and A. Rudi, under review. <a href="http://arxiv.org/abs/2407.17200" class="button small">arXiv</a>
+                                                <strong>[May 2026]</strong> New version of <a href="research/paper41.pdf">Generalization Bounds of Surrogate Policies for Combinatorial Optimization Problems</a> with P.-C. Aubin-Frankowski, A. Parmentier and A. Rudi, under review. <a href="https://arxiv.org/abs/2407.17200" class="button small">arXiv</a>
                                             </li>
                                             <li>
                                                 <strong>[Dec 2025]</strong> New paper <a href="research/paper45.pdf">Gaussian random field's anisotropy using excursion sets</a> with J.-M. Azaïs and F. Dalmao, under review. <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">Code</a>
@@ -224,7 +292,7 @@
 													<li><strong>Head of Site:</strong> Elected head of the École Centrale Lyon site of the Camille Jordan Institute.</li>
                                                     <li><strong>Board Member:</strong> Statutory member of the ICJ laboratory council and the ECL management committee.</li>
 													<li><strong>Associate Researcher:</strong> CERMICS, École Ponts ParisTech.</li>
-													<li><strong>External Collaborator:</strong> <a href="https://team.inria.fr/ockham/team-members/">OCKHAM Team</a>, INRIA Lyon.</li>
+													<li><strong>External Collaborator:</strong> <a href="https://team.inria.fr/ockham/team-members/" target="_blank" rel="noopener">OCKHAM Team</a>, INRIA Lyon.</li>
 												</ul>
 											</div>
 										</article>
@@ -248,7 +316,7 @@
 
                                 <p>
                                     My complete list of publications is available on
-                                    <a href="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=yohann%2C+de+castro&typdoc=(%27ART%27,%27COMM%27,%27POSTER%27,%27OUV%27,%27COUV%27,%27DOUV%27,%27PATENT%27,%27HDR%27)&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_typdoc=oui&CB_vignette=oui&langue=Anglais&tri_exp=typdoc&tri_exp2=annee_publi&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuOmbreVignettes.css" class="button primary small" target="_blank">HAL (Open Archives)</a>.
+                                    <a href="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=yohann%2C+de+castro&amp;typdoc=(%27ART%27,%27COMM%27,%27POSTER%27,%27OUV%27,%27COUV%27,%27DOUV%27,%27PATENT%27,%27HDR%27)&amp;CB_auteur=oui&amp;CB_titre=oui&amp;CB_article=oui&amp;CB_typdoc=oui&amp;CB_vignette=oui&amp;langue=Anglais&amp;tri_exp=typdoc&amp;tri_exp2=annee_publi&amp;tri_exp3=date_publi&amp;ordre_aff=TA&amp;Fen=Aff&amp;css=../css/VisuOmbreVignettes.css" class="button primary small" target="_blank" rel="noopener">HAL (Open Archives)</a>.
                                 </p>
 
                                 <div class="filter-container">
@@ -270,7 +338,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper47.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/TENSOR-KSS" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2606.17665" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2606.17665" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -283,7 +351,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper46.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/Fast-Spawn-Prune" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2605.19784" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2605.19784" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -296,7 +364,7 @@
                                             <span class="tag tag-geom">Geometry</span>
                                             <a href="research/paper45.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/COMETE-Contour-method-Gaussian-Random-Fields/" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2512.11085" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2512.11085" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -309,7 +377,7 @@
                                             <span class="tag tag-geom">Geometry</span>
                                             <a href="research/paper40.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/tensor-spacing" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2406.18397" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2406.18397" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -321,7 +389,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper43.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2509.12889" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2509.12889" class="button small">arXiv</a>
                                             <a href="https://doi.org/10.5281/zenodo.16942355" class="button small">Zenodo</a>
                                         </div>
                                     </li>
@@ -334,7 +402,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper44.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2507.08444" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2507.08444" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -346,7 +414,7 @@
                                             <span class="tag tag-geom">Graphs</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper42.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2410.21987" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2410.21987" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -358,7 +426,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper41.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2407.17200" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2407.17200" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -370,7 +438,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper39.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2312.05993" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2312.05993" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -382,7 +450,7 @@
                                             <span class="tag tag-opt">Inverse Problems</span>
                                             <a href="research/paper38.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/rpetit/2023-support-recovery-tv" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2307.03709" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2307.03709" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -395,7 +463,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper36.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/quentin-duchemin/SIGLE" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2203.15348" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2203.15348" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -407,7 +475,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper37.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2212.12542" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2212.12542" class="button small">arXiv</a>
                                             <a href="https://openreview.net/forum?id=nddEHTSnqg" class="button small">OpenReview</a>
                                         </div>
                                     </li>
@@ -420,7 +488,7 @@
                                             <span class="tag tag-geom">Graphs</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper33.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2203.15351" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2203.15351" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -433,7 +501,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper34.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/gdalle/POVAR2.jl" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2106.09327" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2106.09327" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -446,7 +514,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper28.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/quentin-duchemin/Markovian-random-geometric-graph#readme" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2006.07001" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2006.07001" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -458,7 +526,7 @@
                                             <span class="tag tag-opt">Inverse Problems</span>
                                             <a href="research/paper32.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/rpetit/tvsfw" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/2104.06706" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2104.06706" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -471,7 +539,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper25.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/lar_testing/" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/1906.12072" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1906.12072" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -494,7 +562,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper30.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2011.11435" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2011.11435" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -506,7 +574,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper26.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1907.10592" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1907.10592" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -529,7 +597,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper31.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/2102.05314" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/2102.05314" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -542,7 +610,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper21.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/super-resolution-testing/" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/1706.00679" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1706.00679" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -554,7 +622,7 @@
                                             <span class="tag tag-geom">Geometry</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper27.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1909.06841" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1909.06841" class="button small">arXiv</a>
                                             <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/c4414e538a5475ec0244673b7f2f7dbb-Paper.pdf" class="button small">PMLR</a>
                                         </div>
                                     </li>
@@ -567,7 +635,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper23.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1806.09810" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1806.09810" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -580,7 +648,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper20.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/optimal-design-sum-of-squares/" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/1706.04059" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1706.04059" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -592,7 +660,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper18.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1709.06320" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1709.06320" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -604,7 +672,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper16.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1604.01171" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1604.01171" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -627,7 +695,7 @@
                                             <span class="tag tag-geom">Graphs</span>
                                             <span class="tag tag-prob">Probability</span>
                                             <a href="research/paper22.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1708.02107" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1708.02107" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -639,7 +707,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper17.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1610.01492" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1610.01492" class="button small">arXiv</a>
                                             <a href="https://proceedings.mlr.press/v70/mei17a.html" class="button small">PMLR</a>
                                         </div>
                                     </li>
@@ -652,7 +720,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper12.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1503.05093" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1503.05093" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -665,7 +733,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper13.pdf" class="button small">PDF</a>
                                             <a href="https://ydecastro.github.io/total-variation-sum-of-squares/" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/1502.02436" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1502.02436" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -677,7 +745,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper14.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1606.04760" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1606.04760" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -689,7 +757,7 @@
                                             <span class="tag tag-geom">Graphs</span>
                                             <span class="tag tag-alg">Algebra</span>
                                             <a href="research/paper15.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1603.08113" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1603.08113" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -701,7 +769,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Geometry</span>
                                             <a href="research/paper7.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1405.6417" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1405.6417" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -714,7 +782,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper11.pdf" class="button small">PDF</a>
                                             <a href="https://github.com/ydecastro/nonparametric-hmm" class="button small">Code</a>
-                                            <a href="http://arxiv.org/abs/1501.04787" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1501.04787" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -726,7 +794,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper9.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1402.5662" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1402.5662" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -738,7 +806,7 @@
                                             <span class="tag tag-opt">Optimization</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper5.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1301.5873" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1301.5873" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -750,7 +818,7 @@
                                             <span class="tag tag-prob">Probability</span>
                                             <span class="tag tag-geom">Learning</span>
                                             <a href="research/paper10.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1403.5537" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1403.5537" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -762,7 +830,7 @@
                                             <span class="tag tag-alg">Design</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper2.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1010.2457" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1010.2457" class="button small">arXiv</a>
                                         </div>
                                     </li>
 
@@ -774,7 +842,7 @@
                                             <span class="tag tag-geom">Learning</span>
                                             <span class="tag tag-opt">Optimization</span>
                                             <a href="research/paper4.pdf" class="button small">PDF</a>
-                                            <a href="http://arxiv.org/abs/1103.4951" class="button small">arXiv</a>
+                                            <a href="https://arxiv.org/abs/1103.4951" class="button small">arXiv</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -884,19 +952,14 @@
 									<header id="teaching" class="major">
 										<h2>Teaching</h2>
 									</header>
-									<p>
-										<strong>Office Hours:</strong> Monday 1pm-3pm, Room E6203.
-									</p>
-									<p>
-									    <ul>
-										    <li>
-											    <b>Machine Learning</b> (2nd year -- Master 1) <br> More detail at <a href="http://machine-learning-centrale.github.io">machine-learning-centrale.github.io </a>.
-										    </li>
-										    <li>
-											    <b>Convexity and Parsimony</b> (3rd year -- Master 2) <br> More detail at <a href="http://statistical-learning-centrale.github.io">statistical-learning-centrale.github.io </a>.
-										    </li>
-									    </ul>
-									</p>
+									<ul>
+										<li>
+											<b>Machine Learning</b> (2nd year -- Master 1) <br> More detail at <a href="https://machine-learning-centrale.github.io" target="_blank" rel="noopener">machine-learning-centrale.github.io</a>.
+										</li>
+										<li>
+											<b>Convexity and Parsimony</b> (3rd year -- Master 2) <br> More detail at <a href="https://statistical-learning-centrale.github.io" target="_blank" rel="noopener">statistical-learning-centrale.github.io</a>.
+										</li>
+									</ul>
 								</section>
 
 							<section>
@@ -912,15 +975,15 @@
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">2022 - 2027</td>
-                                                    <td>Junior Member, <a href="https://www.iufrance.fr/">Institut Universitaire de France (IUF)</a></td>
+                                                    <td>Junior Member, <a href="https://www.iufrance.fr/" target="_blank" rel="noopener">Institut Universitaire de France (IUF)</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">Since 2019</td>
-                                                    <td>Professor, <a href="http://math.univ-lyon1.fr/">Institut Camille Jordan</a>, École Centrale Lyon</td>
+                                                    <td>Professor, <a href="https://math.univ-lyon1.fr/" target="_blank" rel="noopener">Institut Camille Jordan</a>, École Centrale Lyon</td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">2018-2019</td>
-                                                    <td>Senior Researcher, <a href="https://cermics-lab.enpc.fr/">CERMICS</a>, École Ponts ParisTech</td>
+                                                    <td>Senior Researcher, <a href="https://cermics-lab.enpc.fr/" target="_blank" rel="noopener">CERMICS</a>, École Ponts ParisTech</td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">2017-2018</td>
@@ -928,23 +991,23 @@
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">Nov 2016</td>
-                                                    <td><a href="research/hdr.pdf">Habilitation (H.D.R)</a></td>
+                                                    <td><a href="research/hdr.pdf" target="_blank" rel="noopener">Habilitation (H.D.R)</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">2012-2016</td>
-                                                    <td>Associate Professor, <a href="https://www.math.u-psud.fr/">Institut de Mathématique d'Orsay</a></td>
+                                                    <td>Associate Professor, <a href="https://www.math.u-psud.fr/" target="_blank" rel="noopener">Institut de Mathématique d'Orsay</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">Dec 2011</td>
-                                                    <td><a href="research/thesis.pdf">Ph.D. Thesis</a></td>
+                                                    <td><a href="research/thesis.pdf" target="_blank" rel="noopener">Ph.D. Thesis</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">2008-2012</td>
-                                                    <td>Ph.D. Student, <a href="http://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a></td>
+                                                    <td>Ph.D. Student, <a href="https://www.math.univ-toulouse.fr/" target="_blank" rel="noopener">Institut de Mathématiques de Toulouse</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: bold;">2004-2009</td>
-                                                    <td>Student, <a href="http://www.ens.fr/">&Eacute;cole Normale Supérieure</a></td>
+                                                    <td>Student, <a href="https://www.ens.fr/" target="_blank" rel="noopener">&Eacute;cole Normale Supérieure</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -960,7 +1023,7 @@
                                             <ul class="contact">
                                                 <li class="fa-envelope-o"><a href="mailto:yohann.de-castro@ec-lyon.fr">yohann.de-castro@ec-lyon.fr</a></li>
                                                 <li class="fa-phone">+33 (0)4 72 18 67 90</li>
-                                                <li class="fa-linkedin"><a href="https://www.linkedin.com/in/yohanndecastro/">LinkedIn Profile</a></li>
+                                                <li class="fa-linkedin"><a href="https://www.linkedin.com/in/yohanndecastro/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-6 col-12-small">
@@ -971,7 +1034,7 @@
                                                     36 Avenue Guy de Collongue<br>
                                                     69134 Écully, France
                                                 </li>
-                                                <li class="fa-map-marker"><a href="https://drive.google.com/open?id=1vdY9bHQP9or9NOJrJFK2WfeYo-qvcObR&usp=sharing">Locate on Map</a></li>
+                                                <li class="fa-map-marker"><a href="https://drive.google.com/open?id=1vdY9bHQP9or9NOJrJFK2WfeYo-qvcObR&amp;usp=sharing" target="_blank" rel="noopener">Locate on Map</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -988,7 +1051,7 @@
 									<ul>
 										<li><a href="#header">Home</a></li>
 										<li><a href="#publications-section">Research</a></li>
-										<li><a href="#supervision">PhD Students & Post-Docs</a></li>
+										<li><a href="#supervision">PhD Students &amp; Post-Docs</a></li>
 										<li><a href="#teaching">Teaching</a></li>
 										<li><a href="#vitae">Vitae</a></li>
 										<li><a href="#contact">Contact</a></li>
